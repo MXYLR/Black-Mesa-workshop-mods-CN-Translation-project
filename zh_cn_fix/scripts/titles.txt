@@ -1,0 +1,241 @@
+$effect 2
+$color 100 100 100
+$color2 240 110 0
+$fxtime 0.25
+$fadein 0.01
+$fadeout 1.5
+$holdtime 3.5
+$position -1 0.58
+
+//TRAININGROOM_TITLE
+//{
+//#HC_Title
+//}
+
+CHAPTER1_TITLE
+{
+#BMS_Chapter1_Title
+}
+
+CHAPTER2_TITLE
+{
+#BMS_Chapter2_Title
+}
+
+CHAPTER3_TITLE
+{
+#BMS_Chapter3_Title
+}
+
+CHAPTER4_TITLE 
+{
+#BMS_Chapter4_Title
+}
+
+CHAPTER5_TITLE
+{
+#BMS_Chapter5_Title
+}
+
+CHAPTER6_TITLE
+{
+#BMS_Chapter6_Title
+}
+
+CHAPTER7_TITLE
+{
+#BMS_Chapter7_Title
+}
+
+CHAPTER8_TITLE
+{
+#BMS_Chapter8_Title
+}
+
+CHAPTER9_TITLE
+{
+#BMS_Chapter9_Title
+}
+
+CHAPTER10_TITLE
+{
+#BMS_Chapter10_Title
+}
+
+CHAPTER11_TITLE
+{
+#BMS_Chapter11_Title
+}
+
+CHAPTER12_TITLE
+{
+#BMS_Chapter12_Title
+}
+
+CHAPTER13_TITLE
+{
+#BMS_Chapter13_Title
+}
+
+CHAPTER14_TITLE
+{
+#BMS_Chapter14_Title
+}
+
+CHAPTER15_TITLE
+{
+#BMS_Chapter15_Title
+}
+
+CHAPTER16_TITLE
+{
+#BMS_Chapter16_Title
+}
+
+CHAPTER17_TITLE
+{
+#BMS_Chapter17_Title
+}
+
+CHAPTER18_TITLE
+{
+#BMS_Chapter18_Title
+}
+
+CHAPTER19_TITLE
+{
+#BMS_Chapter19_Title
+}
+
+CHAPTER20_TITLE
+{
+#BMS_Chapter20_Title
+}
+
+//GAMEOVER MESSAGES
+// Copied from hl2 titles txt
+$position -1 -1
+$effect 2
+$color 100 100 100
+$color2 240 110 0
+$fadein 0.01
+$fxtime 0.25
+$holdtime 3.5
+$fadeout 1.5
+
+GAMEOVER_ALLY
+{
+#BMS_GameOver_Ally
+}
+
+GAMEOVER_OBJECT
+{
+#BMS_GameOver_Object
+}
+
+GAMEOVER_TIMER
+{
+#BMS_GameOver_Timer
+}
+
+GAMEOVER_STUCK
+{
+#BMS_GameOver_Stuck
+}
+
+GAMEOVER_DERP
+{
+#BMS_GameOver_Derp
+}
+
+GAMEOVER_CREDITS
+{
+#BMS_GameOver_Credits
+}
+
+GAMEOVER_JOBACCEPTED
+{
+#BMS_GameOver_JobAccepted
+}
+
+GAMEOVER_JOBDECLINED
+{
+#BMS_GameOver_JobDeclined
+}
+
+//INBOUND TEXT
+$position -1 -1
+$effect 2
+$color 100 100 100
+$color2 240 110 0
+$fadein 0.01
+$fxtime 0.25
+$holdtime 3.5
+$fadeout 1.5
+
+INTRO_LOCATION
+{
+#BMS_Intro_Location
+}
+
+INTRO_SUBJECT
+{
+#BMS_Intro_Subject
+}
+
+INTRO_EDUCATION
+{
+#BMS_Intro_Education
+}
+
+INTRO_POSITION
+{
+#BMS_Intro_Position
+}
+
+INTRO_ASSIGNMENT
+{
+#BMS_Intro_Assignment
+}
+
+INTRO_CLEARANCE
+{
+#BMS_Intro_Clearance
+}
+
+INTRO_SPONSOR
+{
+#BMS_Intro_Sponsor
+}
+
+INTRO_PRIORITY
+{
+#BMS_Intro_Priority
+}
+
+// Saving Message
+$position -1 0.65
+
+GAMESAVING
+{
+##BMS_Saved
+}
+
+// Saved Message
+$clearmessage GAMESAVING
+$position -1 0.65
+
+GAMESAVED
+{
+#BMS_Saved
+}
+
+
+""
+""
+""
+""
+""
+""
+""
+""

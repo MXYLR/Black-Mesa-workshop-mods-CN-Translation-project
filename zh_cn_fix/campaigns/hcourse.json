@@ -1,0 +1,27 @@
+{
+    "author": "PSR Digital",
+    "url": "https://www.moddb.com/mods/black-mesa-hazard-course",
+    "title": "危险应变课程",
+    "description": "半条命一代训练关卡-危险应变课程的重制版",
+    "imageSource": "image://game/campaigns/images/hcourse01.png",
+    "chapters": [
+        {
+            "title": "#HC_Title",
+            "description": "",
+            "imageSource": "image://game/campaigns/images/hcourse02.png",
+            "levelName": "hc_t0a0"
+        },
+		{
+            "title": "#HC_Title2",
+            "description": "",
+            "imageSource": "image://game/campaigns/images/hcourse_skipintro.png",
+            "levelName": "hc_t0a1"
+        },
+        {
+            "title": "#FNAHC_Title",
+            "description": "",
+            "imageSource": "image://game/campaigns/images/fnahc.png",
+            "levelName": "hc_fivenights"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+"dm_office"
+{
+	// The 'non mapper' name of the level.
+	"name"      "办公室"
+	
+	// The number of recommended players.
+	"players"   "2 - 6 PLAYERS"
+	
+	// Image materials to draw. Randomly chosen.
+	// Path relative to materials. Must point to a
+	// VMT.
+	"Images"
+	{
+		"0" "multiplayer/map_backgrounds/dm_office_0"
+		"1" "multiplayer/map_backgrounds/dm_office_1"
+		"2" "multiplayer/map_backgrounds/dm_office_2"
+	}
+	
+	// Map specific descriptions. Also randomly chosen.
+	"Descriptions"
+	{
+		"0" "办公室区遭受了来自串联共振的毁灭打击, 工作人员受到的消防训练完全无法应对这种情况..."
+		"1" "办公室区遭受了来自串联共振的毁灭打击, 工作人员受到的消防训练完全无法应对这种情况..."
+		"2" "办公室区遭受了来自串联共振的毁灭打击, 工作人员受到的消防训练完全无法应对这种情况..."
+	}
+}

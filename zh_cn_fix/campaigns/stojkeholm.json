@@ -1,0 +1,15 @@
+{
+    "author": "Notewell",
+    "url": "psr.digital",
+    "title": "Stojkeholm",
+    "description": "A Black Mesa recreation of a map created for TWHL's 2011 Secret Santa map exchange.",
+    "imageSource": "image://game/campaigns/images/stojke_thumbs.png",
+    "chapters": [
+        {
+            "title": "Stojkeholm",
+            "description": "",
+            "imageSource": "image://game/campaigns/images/stojke_thumbs.png",
+            "levelName": "stojkeholm_01"
+        }
+    ]
+}

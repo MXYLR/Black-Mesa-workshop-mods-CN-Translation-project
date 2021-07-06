@@ -1,0 +1,26 @@
+"dm_gasworks"
+{
+	// The 'non mapper' name of the level.
+	"name"      "煤气工厂"
+	
+	// The number of recommended players.
+	"players"   "6 - 16名玩家"
+	
+	// Image materials to draw. Randomly chosen.
+	// Path relative to materials. Must point to a
+	// VMT.
+	"Images"
+	{
+		"0" "multiplayer/map_backgrounds/dm_gasworks_0"
+		"1" "multiplayer/map_backgrounds/dm_gasworks_1"
+		"2" "multiplayer/map_backgrounds/dm_gasworks_2"
+	}
+	
+	// Map specific descriptions. Also randomly chosen.
+	"Descriptions"
+	{
+		"0" "为了给早期传送实验供电而建造了这座煤气厂。曾经的实验痕迹都隐藏在地表之下……"
+		"1" "为了给早期传送实验供电而建造了这座煤气厂。曾经的实验痕迹都隐藏在地表之下……"
+		"2" "为了给早期传送实验供电而建造了这座煤气厂。曾经的实验痕迹都隐藏在地表之下……"
+	}
+}

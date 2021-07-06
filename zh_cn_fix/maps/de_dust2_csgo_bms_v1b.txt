@@ -1,0 +1,26 @@
+"dm_crossfire"
+{
+	// The 'non mapper' name of the level.
+	"name"      "炙热沙城 2"
+	
+	// The number of recommended players.
+	"players"   "4 - 24 PLAYERS"
+	
+	// Image materials to draw. Randomly chosen.
+	// Path relative to materials. Must point to a
+	// VMT.
+	"Images"
+	{
+		"0" "multiplayer/map_backgrounds/dm_pro_crossfire_v1_0"
+		"1" "multiplayer/map_backgrounds/dm_pro_crossfire_v1_1"
+		"2" "multiplayer/map_backgrounds/dm_pro_crossfire_v1_2"
+	}
+	
+	// Map specific descriptions. Also randomly chosen.
+	"Descriptions"
+	{
+		"0" "CSGO 经典地图沙漠二现已加入黑山起源, 你现在可以用高斯枪火箭筒来 Rush B 了 !!!"
+		"1" "CSGO 经典地图沙漠二现已加入黑山起源, 你现在可以用高斯枪火箭筒来 Rush B 了 !!!"
+		"2" "CSGO 经典地图沙漠二现已加入黑山起源, 你现在可以用高斯枪火箭筒来 Rush B 了 !!!"
+	}
+}

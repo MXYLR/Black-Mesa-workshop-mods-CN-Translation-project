@@ -1,0 +1,26 @@
+"dm_datacore_v3"
+{
+	// The 'non mapper' name of the level.
+	"name"      "数据核心"
+	
+	// The number of recommended players.
+	"players"   "4 - 12 PLAYERS"
+	
+	// Image materials to draw. Randomly chosen.
+	// Path relative to materials. Must point to a
+	// VMT.
+	"Images"
+	{
+		"0" "multiplayer/map_backgrounds/dm_datacore_v3_0"
+		"1" "multiplayer/map_backgrounds/dm_datacore_v3_1"
+		"2" "multiplayer/map_backgrounds/dm_datacore_v3_2"
+	}
+	
+	// Map specific descriptions. Also randomly chosen.
+	"Descriptions"
+	{
+		"0" "在 E 区建筑群的深处有一个高度机密的研究实验室。所有最重要的文件都位于一个被称为 "数据核心" 的服务器中......"
+		"1" "在 E 区建筑群的深处有一个高度机密的研究实验室。所有最重要的文件都位于一个被称为 "数据核心" 的服务器中......"
+		"2" "在 E 区建筑群的深处有一个高度机密的研究实验室。所有最重要的文件都位于一个被称为 "数据核心" 的服务器中......"
+	}
+}

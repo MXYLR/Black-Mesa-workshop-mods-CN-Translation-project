@@ -1,0 +1,26 @@
+"dm_stack"
+{
+	// The 'non mapper' name of the level.
+	"name"      "多层天线"
+	
+	// The number of recommended players.
+	"players"   "2 - 6名玩家"
+	
+	// Image materials to draw. Randomly chosen.
+	// Path relative to materials. Must point to a
+	// VMT.
+	"Images"
+	{
+		"0" "multiplayer/map_backgrounds/dm_stack_0"
+		"1" "multiplayer/map_backgrounds/dm_stack_1"
+		"2" "multiplayer/map_backgrounds/dm_stack_2"
+	}
+	
+	// Map specific descriptions. Also randomly chosen.
+	"Descriptions"
+	{
+		"0" "通往黑山基地通讯部门的道路被认为是试验训练的完美场所……"
+		"1" "通往黑山基地通讯部门的道路被认为是试验训练的完美场所……"
+		"2" "通往黑山基地通讯部门的道路被认为是试验训练的完美场所……"
+	}
+}

@@ -1,0 +1,15 @@
+{
+    "author": "Chris Bryant",
+    "url": "https://www.moddb.com/mods/black-mesa-further-data",
+    "title": "Further Data",
+    "description": "Half Life : Uplink 的重制版",
+    "imageSource": "image://game/campaigns/fd.png",
+    "chapters": [
+        {
+            "title": "#FD_Title",
+            "description": "",
+            "imageSource": "image://game/campaigns/images/fd.png",
+            "levelName": "fd01"
+        }
+    ]
+}

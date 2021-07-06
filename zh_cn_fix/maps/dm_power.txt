@@ -1,0 +1,26 @@
+"dm_power"
+{
+	// The 'non mapper' name of the level.
+	"name"      "开启电力"
+	
+	// The number of recommended players.
+	"players"   "3 - 12 PLAYERS"
+	
+	// Image materials to draw. Randomly chosen.
+	// Path relative to materials. Must point to a
+	// VMT.
+	"Images"
+	{
+		"0" "multiplayer/map_backgrounds/dm_power_0"
+		"1" "multiplayer/map_backgrounds/dm_power_1"
+		"2" "multiplayer/map_backgrounds/dm_power_2"
+	}
+	
+	// Map specific descriptions. Also randomly chosen.
+	"Descriptions"
+	{
+		"0" "为黑山基地运输系统供电的废弃设施变得非常危险..."
+		"1" "为黑山基地运输系统供电的废弃设施变得非常危险..."
+		"2" "为黑山基地运输系统供电的废弃设施变得非常危险..."
+	}
+}

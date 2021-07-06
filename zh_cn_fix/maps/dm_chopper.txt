@@ -1,0 +1,26 @@
+"dm_chopper"
+{
+	// The 'non mapper' name of the level.
+	"name"      "CHOPPER"
+	
+	// The number of recommended players.
+	"players"   "6 - 16 PLAYERS"
+	
+	// Image materials to draw. Randomly chosen.
+	// Path relative to materials. Must point to a
+	// VMT.
+	"Images"
+	{
+		"0" "multiplayer/map_backgrounds/dm_chopper_0"
+		"1" "multiplayer/map_backgrounds/dm_chopper_1"
+		"2" "multiplayer/map_backgrounds/dm_chopper_2"
+	}
+	
+	// Map specific descriptions. Also randomly chosen.
+	"Descriptions"
+	{
+		"0" "在黑山基地运输系统的尽头, 这个可疑的货运设施是废物处理之前的最后一站..."
+		"1" "在黑山基地运输系统的尽头, 这个可疑的货运设施是废物处理之前的最后一站..."
+		"2" "在黑山基地运输系统的尽头, 这个可疑的货运设施是废物处理之前的最后一站..."
+	}
+}

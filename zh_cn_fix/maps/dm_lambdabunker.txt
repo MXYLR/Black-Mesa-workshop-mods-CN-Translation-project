@@ -1,0 +1,26 @@
+"dm_lambdabunker"
+{
+	// The 'non mapper' name of the level.
+	"name"      "拉姆达地堡"
+	
+	// The number of recommended players.
+	"players"   "4 - 12名玩家"
+	
+	// Image materials to draw. Randomly chosen.
+	// Path relative to materials. Must point to a
+	// VMT.
+	"Images"
+	{
+		"0" "multiplayer/map_backgrounds/dm_lambdabunker_0"
+		"1" "multiplayer/map_backgrounds/dm_lambdabunker_1"
+		"2" "multiplayer/map_backgrounds/dm_lambdabunker_2"
+	}
+	
+	// Map specific descriptions. Also randomly chosen.
+	"Descriptions"
+	{
+		"0" "灾难发生数周后，军队重新集结并在遭受了猛烈炮击的拉姆达设施中进行肃清行动，打击一些难啃的硬骨头……"
+		"1" "灾难发生数周后，军队重新集结并在遭受了猛烈炮击的拉姆达设施中进行肃清行动，打击一些难啃的硬骨头……"
+		"2" "灾难发生数周后，军队重新集结并在遭受了猛烈炮击的拉姆达设施中进行肃清行动，打击一些难啃的硬骨头……"
+	}
+}

@@ -1,0 +1,26 @@
+"dm_bounce"
+{
+	// The 'non mapper' name of the level.
+	"name"      "跳跃峡谷"
+	
+	// The number of recommended players.
+	"players"   "4 - 16名玩家"
+	
+	// Image materials to draw. Randomly chosen.
+	// Path relative to materials. Must point to a
+	// VMT.
+	"Images"
+	{
+		"0" "multiplayer/map_backgrounds/dm_bounce_0"
+		"1" "multiplayer/map_backgrounds/dm_bounce_1"
+		"2" "multiplayer/map_backgrounds/dm_bounce_2"
+	}
+	
+	// Map specific descriptions. Also randomly chosen.
+	"Descriptions"
+	{
+		"0" "这个峡谷最早被用作采矿作业。现在则因为未知原因而被当做生物危害区……"
+		"1" "这个峡谷最早被用作采矿作业。现在则因为未知原因而被当做生物危害区……"
+		"2" "这个峡谷最早被用作采矿作业。现在则因为未知原因而被当做生物危害区……"
+	}
+}

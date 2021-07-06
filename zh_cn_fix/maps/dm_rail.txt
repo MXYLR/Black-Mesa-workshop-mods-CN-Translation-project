@@ -1,0 +1,26 @@
+"dm_rail"
+{
+	// The 'non mapper' name of the level.
+	"name"      "铁轨之上"
+	
+	// The number of recommended players.
+	"players"   "3 - 12 名玩家"
+	
+	// Image materials to draw. Randomly chosen.
+	// Path relative to materials. Must point to a
+	// VMT.
+	"Images"
+	{
+		"0" "multiplayer/map_backgrounds/dm_rail_0"
+		"1" "multiplayer/map_backgrounds/dm_rail_1"
+		"2" "multiplayer/map_backgrounds/dm_rail_2"
+	}
+	
+	// Map specific descriptions. Also randomly chosen.
+	"Descriptions"
+	{
+		"0" "这张地图是铁轨之上……"
+		"1" "这张地图是铁轨之上……"
+		"2" "这张地图是铁轨之上……"
+	}
+}

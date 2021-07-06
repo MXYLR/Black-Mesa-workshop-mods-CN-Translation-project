@@ -1,0 +1,26 @@
+"dm_undertow"
+{
+	// The 'non mapper' name of the level.
+	"name"      "波涛之下"
+	
+	// The number of recommended players.
+	"players"   "6 - 16名玩家"
+	
+	// Image materials to draw. Randomly chosen.
+	// Path relative to materials. Must point to a
+	// VMT.
+	"Images"
+	{
+		"0" "multiplayer/map_backgrounds/dm_undertow_0"
+		"1" "multiplayer/map_backgrounds/dm_undertow_1"
+		"2" "multiplayer/map_backgrounds/dm_undertow_2"
+	}
+	
+	// Map specific descriptions. Also randomly chosen.
+	"Descriptions"
+	{
+		"0" "这个污水处理设施是废渣处理后的污水所流经的最后一站。灾难后的草率撤离使得设施并未得到完全关闭……"
+		"1" "这个污水处理设施是废渣处理后的污水所流经的最后一站。灾难后的草率撤离使得设施并未得到完全关闭……"
+		"2" "这个污水处理设施是废渣处理后的污水所流经的最后一站。灾难后的草率撤离使得设施并未得到完全关闭……"
+	}
+}

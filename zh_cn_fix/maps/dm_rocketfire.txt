@@ -1,0 +1,26 @@
+"dm_rocketfire"
+{
+	// The 'non mapper' name of the level.
+	"name"      "火箭发射中心"
+	
+	// The number of recommended players.
+	"players"   "4 - 8 PLAYERS"
+	
+	// Image materials to draw. Randomly chosen.
+	// Path relative to materials. Must point to a
+	// VMT.
+	"Images"
+	{
+		"0" "multiplayer/map_backgrounds/dm_rocketfire_0"
+		"1" "multiplayer/map_backgrounds/dm_rocketfire_1"
+		"2" "multiplayer/map_backgrounds/dm_rocketfire_2"
+	}
+	
+	// Map specific descriptions. Also randomly chosen.
+	"Descriptions"
+	{
+		"0" "卫星发射系统在串联共振之后仍然保持基本完好。它现在可能是阻止外星人进一步入侵的唯一希望......"
+		"1" "卫星发射系统在串联共振之后仍然保持基本完好。它现在可能是阻止外星人进一步入侵的唯一希望......"
+		"2" "卫星发射系统在串联共振之后仍然保持基本完好。它现在可能是阻止外星人进一步入侵的唯一希望......"
+	}
+}

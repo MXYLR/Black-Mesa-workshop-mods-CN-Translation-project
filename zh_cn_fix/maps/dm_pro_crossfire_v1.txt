@@ -1,0 +1,26 @@
+"dm_crossfire"
+{
+	// The 'non mapper' name of the level.
+	"name"      "经典版交叉火力 (穿越火线)"
+	
+	// The number of recommended players.
+	"players"   "4 - 24 PLAYERS"
+	
+	// Image materials to draw. Randomly chosen.
+	// Path relative to materials. Must point to a
+	// VMT.
+	"Images"
+	{
+		"0" "multiplayer/map_backgrounds/dm_pro_crossfire_v1_0"
+		"1" "multiplayer/map_backgrounds/dm_pro_crossfire_v1_1"
+		"2" "multiplayer/map_backgrounds/dm_pro_crossfire_v1_2"
+	}
+	
+	// Map specific descriptions. Also randomly chosen.
+	"Descriptions"
+	{
+		"0" "在新墨西哥州大沙漠中心的某一个地方, 黑山基地核能研究小组准备隐藏一个红色的大按钮..."
+		"1" "在新墨西哥州大沙漠中心的某一个地方, 黑山基地核能研究小组准备隐藏一个红色的大按钮..."
+		"2" "在新墨西哥州大沙漠中心的某一个地方, 黑山基地核能研究小组准备隐藏一个红色的大按钮..."
+	}
+}

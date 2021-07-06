@@ -1,0 +1,26 @@
+"dm_stalkyard"
+{
+	// The 'non mapper' name of the level.
+	"name"      "伏击仓库"
+	
+	// The number of recommended players.
+	"players"   "2 - 10名玩家"
+	
+	// Image materials to draw. Randomly chosen.
+	// Path relative to materials. Must point to a
+	// VMT.
+	"Images"
+	{
+		"0" "multiplayer/map_backgrounds/dm_stalkyard_0"
+		"1" "multiplayer/map_backgrounds/dm_stalkyard_1"
+		"2" "multiplayer/map_backgrounds/dm_stalkyard_2"
+	}
+	
+	// Map specific descriptions. Also randomly chosen.
+	"Descriptions"
+	{
+		"0" "这个偏远的储藏设施过去是用来存放黑山基地早期的卫星原型和零部件的。但它随着时间的流逝而渐渐荒废……"
+		"1" "这个偏远的储藏设施过去是用来存放黑山基地早期的卫星原型和零部件的。但它随着时间的流逝而渐渐荒废……"
+		"2" "这个偏远的储藏设施过去是用来存放黑山基地早期的卫星原型和零部件的。但它随着时间的流逝而渐渐荒废……"
+	}
+}

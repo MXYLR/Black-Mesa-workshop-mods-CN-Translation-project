@@ -1,0 +1,26 @@
+"dm_tension"
+{
+	// The 'non mapper' name of the level.
+	"name"      "地面惊魂"
+	
+	// The number of recommended players.
+	"players"   "8 - 16 PLAYERS"
+	
+	// Image materials to draw. Randomly chosen.
+	// Path relative to materials. Must point to a
+	// VMT.
+	"Images"
+	{
+		"0" "multiplayer/map_backgrounds/dm_tension_0"
+		"1" "multiplayer/map_backgrounds/dm_tension_1"
+		"2" "multiplayer/map_backgrounds/dm_tension_2"
+	}
+	
+	// Map specific descriptions. Also randomly chosen.
+	"Descriptions"
+	{
+		"0" "黑山基地研究设施的地表区域总是让人惊心动魄..."
+		"1" "黑山基地研究设施的地表区域总是让人惊心动魄..."
+		"2" "黑山基地研究设施的地表区域总是让人惊心动魄..."
+	}
+}

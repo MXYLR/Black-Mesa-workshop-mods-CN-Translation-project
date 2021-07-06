@@ -1,0 +1,26 @@
+"dm_subtransit"
+{
+	// The 'non mapper' name of the level.
+	"name"      "地下运输"
+	
+	// The number of recommended players.
+	"players"   "6 - 16名玩家"
+	
+	// Image materials to draw. Randomly chosen.
+	// Path relative to materials. Must point to a
+	// VMT.
+	"Images"
+	{
+		"0" "multiplayer/map_backgrounds/dm_subtransit_0"
+		"1" "multiplayer/map_backgrounds/dm_subtransit_1"
+		"2" "multiplayer/map_backgrounds/dm_subtransit_2"
+	}
+	
+	// Map specific descriptions. Also randomly chosen.
+	"Descriptions"
+	{
+		"0" "黑山基地的轨道交通系统是世界上最庞大和复杂的运输系统之一。这个设施负责向拉姆达设施运送一些敏感材料……"
+		"1" "黑山基地的轨道交通系统是世界上最庞大和复杂的运输系统之一。这个设施负责向拉姆达设施运送一些敏感材料……"
+		"2" "黑山基地的轨道交通系统是世界上最庞大和复杂的运输系统之一。这个设施负责向拉姆达设施运送一些敏感材料……"
+	}
+}
