@@ -11,9 +11,9 @@
 	// VMT.
 	"Images"
 	{
-		"0" "multiplayer/map_backgrounds/dm_pro_crossfire_v1_0"
-		"1" "multiplayer/map_backgrounds/dm_pro_crossfire_v1_1"
-		"2" "multiplayer/map_backgrounds/dm_pro_crossfire_v1_2"
+		"0" "multiplayer/map_backgrounds/de_dust2_csgo_bms_v1b_0"
+		"1" "multiplayer/map_backgrounds/de_dust2_csgo_bms_v1b_1"
+		"2" "multiplayer/map_backgrounds/de_dust2_csgo_bms_v1b_2"
 	}
 	
 	// Map specific descriptions. Also randomly chosen.
