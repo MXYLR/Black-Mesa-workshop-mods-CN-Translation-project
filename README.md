@@ -1,6 +1,6 @@
-# Black-Mesa-workshop-mods-CN-Translation-project
+# 黑山起源创意工坊模组汉化计划
 
-黑山起源创意工坊模组汉化计划
+## 本项目遵守 MIT 开源协议
 
 # 黑山起源官方中文汉化增强补丁包
 
