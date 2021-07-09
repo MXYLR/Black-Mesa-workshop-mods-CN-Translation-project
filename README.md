@@ -27,3 +27,13 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2537604689
 ![img](https://github.com/MXYLR/Black-Mesa-workshop-mods-CN-Translation-project/blob/main/zh_cn_fix/%E4%BF%AE%E6%94%B9%E5%89%8D%E5%90%8E%E5%AF%B9%E6%AF%94.png)
 
 ![img](https://github.com/MXYLR/Black-Mesa-workshop-mods-CN-Translation-project/blob/main/zh_cn_fix/%E5%85%A8%E9%9D%A2%E9%80%82%E9%85%8D.png)
+
+## 官方中文翻译以及危险应变课程, stojkeholm 和 further data
+
+https://github.com/MXYLR/Black-Mesa-workshop-mods-CN-Translation-project/tree/main/zh_cn_fix
+
+## 黑山起源 : 蓝色沸点
+
+由于这个制作组 HECU Team 的模组需要单独安装, 所以我给他们的每一个模组都建立了一个文件夹, 如果你有其它他们的模组要添加的话, 也请另外单独建立文件夹
+
+https://github.com/MXYLR/Black-Mesa-workshop-mods-CN-Translation-project/tree/main/bshift_zh-cn
