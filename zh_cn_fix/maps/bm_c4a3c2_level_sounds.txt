@@ -1,0 +1,29 @@
+
+// Interloper: OVERRIDING Vortigaunt idles to implement unused "labored" speech
+
+"NPC_Vortigaunt.idle"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"npc/alien_slave/vort_laboured_cough01.wav"
+		"wave"	"npc/alien_slave/vort_laboured_cough02.wav"
+		"wave"	"npc/alien_slave/vort_laboured_cough03.wav"
+		"wave"	"npc/alien_slave/vort_laboured_cough04.wav"
+		"wave"	"npc/alien_slave/vort_laboured_cough05.wav"
+		"wave"	"npc/alien_slave/vort_laboured_coughidle01.wav"
+		"wave"	"npc/alien_slave/vort_laboured_coughidle02.wav"
+		"wave"	"npc/alien_slave/vort_laboured_coughidle03.wav"
+		"wave"	"npc/alien_slave/vort_laboured_coughidle04.wav"
+		"wave"	"npc/alien_slave/vort_laboured_coughidle05.wav"
+		"wave"	"npc/alien_slave/vort_laboured_idle01.wav"
+		"wave"	"npc/alien_slave/vort_laboured_idle02.wav"
+		"wave"	"npc/alien_slave/vort_laboured_idle03.wav"
+		"wave"	"npc/alien_slave/vort_laboured_idle04.wav"
+		"wave"	"npc/alien_slave/vort_laboured_idle05.wav"
+	}
+}

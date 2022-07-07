@@ -1,0 +1,22 @@
+"dm_lost_village"
+{
+// The 'non mapper' name of the level.
+"name" "LOSTVILLAGE"
+// The number of recommended players.
+"players" "2 - 8 PLAYERS"
+// Image materials to draw. Randomly chosen.
+// Path relative to materials. Must point to a
+// VMT.
+"Images"
+{
+"0" "multiplayer/map_backgrounds/dm_lost_village_0"
+"1" "multiplayer/map_backgrounds/dm_lost_village_1"
+"2" "multiplayer/map_backgrounds/dm_lost_village_2"
+}
+// Map specific descriptions. Also randomly chosen.
+"Descriptions"
+{
+"0" "Get your eyes open and watch out! Original Version from [RI]Wolf 1999."
+"1" "Get your eyes open and watch out! Original Version from [RI]Wolf 1999."
+"2" "Get your eyes open and watch out! Original Version from [RI]Wolf 1999."
+}
