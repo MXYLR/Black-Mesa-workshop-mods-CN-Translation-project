@@ -1,0 +1,115 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "voice"
+  {
+    event speak "player.guard.dominate03"
+    {
+      time 0.273334 1.878209
+      param "player.guard.dominate03"
+      fixedlength
+      tags
+      {
+        "ICE" 0.420833
+        "think" 0.887500
+      }
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "hg_puncuate_down"
+    {
+      time 0.120000 1.866667
+      param "hg_puncuate_down"
+      event_ramp
+      {
+        0.4563 0.4320
+        0.8750 0.5280
+        1.4656 0.4080
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.311705
+        "extreme" 0.506520
+        "loop" 0.516651
+        "end" 0.526002
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.333333
+        "extreme" 0.541667
+        "loop" 0.562500
+        "end" 0.562500
+      }
+      sequenceduration 1.633333
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "head"
+    {
+      time 0.113333 2.240000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.1209 0.5700
+          0.5767 0.5700
+          0.8581 0.3900
+          1.1023 0.4500
+          1.5930 0.4900
+        }
+      }
+    }
+  }
+  channel "expression"
+  {
+    event expression "b_smile_evil00"
+    {
+      time 0.013333 2.606666
+      param "humans\guard\expressions_guard"
+      param2 "b_smile01a"
+      event_ramp
+      {
+        0.2469 0.7440
+        0.6749 1.0000
+        1.7537 0.7440
+        2.2202 0.7280
+      }
+    }
+    event expression "b_incombat01"
+    {
+      time 1.220000 2.546667
+      param "humans\guard\expressions_guard"
+      param2 "b_incombat01"
+      event_ramp
+      {
+        0.4344 0.5920
+        0.9000 0.2480
+      }
+    }
+  }
+  channel "look"
+  {
+    event lookat "Look at !enemy"
+    {
+      time 0.013333 2.433333
+      param "!enemy"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "64"
+  "ExpressionTool" "86"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

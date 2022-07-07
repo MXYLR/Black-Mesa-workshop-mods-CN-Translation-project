@@ -1,0 +1,374 @@
+//========================================================
+// 	HEV SUIT  LOGIN		
+//========================================================
+HEV_LOGON hev_vox/bell, 01_hev_logon, 02_powerarmor_on, 03_atmospherics_on, 04_vitalsigns_on, 05_automedic_on, 06_weaponselect_on, 07_munitionview_on, 08_communications_on, 09_safe_day {Len 41.76 closecaption HEV_LOGON}
+HEV_LOGON_SHORT hev_vox/bell, 01_hev_logon {Len 11.07 closecaption HEV_LOGON_SHORT}
+
+HEV_LONG_JUMP weapons/jumpmod/bootup_sequence/bootup_moduleacq (p100){Len 1.5  closecaption HEV_LONG_JUMP}
+
+// HEV_LONG_JUMP hev_vox/blip blip(p130) powermove_on {Len 3.71}
+
+// HEV Suit Section directory Updated by debeerguy007- NEW HEV Voice Pending
+// NOTE: any entry commented out is not being used, and/or has likely never been used in the history of HL, and is legacy stuff as a result.
+
+//================================//
+//	HEV DEATH		//
+//===============================//
+
+// medical
+HEV_DEAD0 hev_vox/beep, beep, beep beep, beep, beep, flatline {Len 6.29 closecaption HEV.Flatline}
+HEV_DEAD1 hev_vox/beep, beep, beep beep, beep, flatline {Len 5.82 closecaption HEV.Flatline}
+
+HEV_MED0 hev_vox/(p140) boop, boop, boop, (p100) innsuficient_medical {Len 1.41 closecaption HEV.insufficient_medical}
+HEV_MED1 hev_vox/(p140) boop, boop, boop, (p100) 05_automedic_on {Len 4.92 closecaption HEV.automedic_on}
+
+
+//===============================//
+//	HEV AUTOMEDIC		//
+//===============================//
+
+HEV_HEAL0 hev_vox/(p140) boop, boop, boop, (p100) wound_sterilized, blip(p130 v50), blip(p130 v40), hiss, morphine_shot {Len 7.03 closecaption HEV.sterilized_morphine}
+//HEV_HEAL1 hev_vox/(p140) boop, boop, boop, (p100) torniquette_applied, bleeding_stopped {Len 7.03 closecaption HEV.torni_bleed}
+HEV_HEAL2 hev_vox/(p140) boop, boop, boop, (p100) bleeding_stopped {Len 3.66 closecaption HEV.bleeding_stopped}
+//HEV_HEAL3 hev_vox/(p140) boop, boop, boop, (p100) blood_plasma {Len 4.02 closecaption HEV.blood_plasma}
+HEV_HEAL4 hev_vox/(p140) boop, boop, boop, (p100) hiss, antitoxin_shot {Len 4.38 closecaption HEV.antitoxin_shot}
+HEV_HEAL5 hev_vox/(p140) boop, boop, boop, (p100) hiss, antidote_shot {Len 4.17 closecaption HEV.antidote_shot}
+HEV_HEAL6 hev_vox/(p140) boop, boop, boop, (p100) hiss, wound_sterilized {Len 4.16 closecaption HEV.wound_sterilized}
+HEV_HEAL7 hev_vox/(p140) boop, boop, boop, (p100) hiss, morphine_shot {Len 4.16 closecaption HEV.morphine_shot}
+//HEV_HEAL8 hev_vox/(p140) boop, boop, boop, (p100) medical_repaired {Len 4.17 closecaption HEV.medical_repaired}
+
+//=======================================//
+//	HEV USER INJURY DETECTION	//
+//======================================//
+
+HEV_DMG0 hev_vox/(p160) boop, boop, boop, (p100) minor_lacerations {Len 4.09 closecaption HEV.minor_lacerations}
+HEV_DMG1 hev_vox/(p160) boop, boop, boop, (p100) major_lacerations {Len 4.19 closecaption HEV.major_lacerations}
+//HEV_DMG2 hev_vox/(p160) boop, boop, boop, (p100) internal_bleeding {Len 3.64 closecaption HEV.internal_bleeding}
+HEV_DMG3 hev_vox/(p160) boop, boop, boop, (p100) blood_toxins {Len 5.04 closecaption HEV.blood_toxins}
+HEV_DMG4 hev_vox/(p160) boop, boop, boop, (p100) minor_fracture {Len 3.67 closecaption HEV.minor_fracture}
+HEV_DMG5 hev_vox/(p160) boop, boop, boop, (p100) major_fracture {Len 3.67 closecaption HEV.major_fracture}
+HEV_DMG6 hev_vox/(p160) boop, boop, boop, (p100) blood_loss {Len 3.39 closecaption HEV.blood_loss}
+HEV_DMG7 hev_vox/(p140) boop, boop, boop, (p100) seek_medic {Len 3.92 closecaption HEV.seek_medic}
+
+//=======================================//
+//	HEV-USER HEALTH READOUTS	//
+//======================================//
+
+//HEV_HLTH0 hev_vox/(p120) beep, beep, (p100) health_dropping {Len 4.31 closecaption HEV.health_dropping}
+HEV_HLTH1 hev_vox/(p120) beep, beep, (p100) health_dropping2 {Len 3.68 closecaption HEV.health_dropping2}
+HEV_HLTH2 hev_vox/(p120) beep, beep, beep, (p100) health_critical {Len 4.32 closecaption HEV.health_critical}
+HEV_HLTH3 hev_vox/(p120) beep, beep, beep, (p100) near_death {Len 4.77 closecaption HEV.near_death}
+//HEV_HLTH4 hev_vox/(p140) beep, beep, (p100) health_dropping2, evacuate_area {Len 5.93 closecaption HEV.health2_evac}
+HEV_HLTH5 hev_vox/(p140) beep, beep, beep, (p100) health_critical, evacuate_area {Len 6.52 closecaption HEV.health_crit_evac}
+HEV_HLTH6 hev_vox/(p140) beep, beep, beep, (p100) near_death, evacuate_area immediately {Len 8.22 closecaption HEV.near_death_evac}
+
+//===============================================//
+//        HEV-FIRE AND ELECTRICAL- NOT USED EVER	//
+//===============================================//
+
+//HEV_SHOCK hev_vox/(p120) beep, beep, (p100) warning, shock_damage {Len 4.05 closecaption HEV.shock_damage}
+//HEV_FIRE hev_vox/(p120) beep, beep, (p100) warning, heat_damage {Len 4.77 closecaption HEV.heat_damage}
+
+//HEV_D00 hev_vox/fuzz fuzz(p100), power_restored {Len 2.12 closecaption HEV.power_restored}
+//HEV_D01 hev_vox/fuzz fuzz(p80), hev_shutdown {Len 4.99 closecaption HEV.hev_shutdown}
+//HEV_0P hev_vox/(p103) fuzz fuzz, power_below five percent {Len 6.35}
+
+//===============================//
+//	HEV POWER STATUS	//
+//===============================//
+
+HEV_1P hev_vox/(p103) fuzz fuzz, (p103) power_restored(e30), ten percent {Len 2.75 closecaption HEV_1P}
+HEV_2P hev_vox/(p103) fuzz (p103) fuzz, (p103) power_restored(e30), fifteen percent {Len 3.15 closecaption HEV_2P}
+HEV_3P hev_vox/(p103) fuzz fuzz, (p103) power_restored(e30), twenty percent {Len 2.99 closecaption HEV_3P}
+HEV_4P hev_vox/(p103) fuzz fuzz, (p103) power_restored(e30), twenty five percent {Len 3.87 closecaption HEV_4P}
+HEV_5P hev_vox/(p103) fuzz fuzz, (p103) power_restored(e30), thirty percent {Len 3.04 closecaption HEV_5P}
+HEV_6P hev_vox/(p103) fuzz fuzz, (p103) power_restored(e30), thirty five percent {Len 3.91 closecaption HEV_6P}
+HEV_7P hev_vox/(p103) fuzz fuzz, (p103) power_restored(e30), fourty percent {Len 3.07 closecaption HEV_7P}
+HEV_8P hev_vox/(p103) fuzz fuzz, (p103) power_restored(e30), fourty five percent {Len 3.95 closecaption HEV_8P}
+HEV_9P hev_vox/(p103) fuzz fuzz, (p103) power_restored(e30), fifty percent {Len 3.17 closecaption HEV_9P}
+HEV_10P hev_vox/(p103) fuzz fuzz, (p103) power_restored(e30), fifty five percent {Len 4.05 closecaption HEV_10P}
+HEV_11P hev_vox/(p103) fuzz fuzz, (p103) power_restored(e30), sixty percent {Len 3.16 closecaption HEV_11P}
+HEV_12P hev_vox/(p103) fuzz fuzz, (p103) power_restored(e30), sixty five percent {Len 4.04 closecaption HEV_12P}
+HEV_13P hev_vox/(p103) fuzz fuzz, (p103) power_restored(e30), seventy percent {Len 3.12 closecaption HEV_13P}
+HEV_14P hev_vox/(p103) fuzz fuzz, (p103) power_restored(e30), seventy five percent {Len 4.00 closecaption HEV_14P}
+HEV_15P hev_vox/(p103) fuzz fuzz, (p103) power_restored(e30), eighty percent {Len 2.88 closecaption HEV_15P}
+HEV_16P hev_vox/(p103) fuzz fuzz, (p103) power_restored(e30), eighty five percent {Len 3.76 closecaption HEV_16P}
+HEV_17P hev_vox/(p103) fuzz fuzz, (p103) power_restored(e30), ninety percent {Len 3.12 closecaption HEV_17P}
+HEV_18P hev_vox/(p103) fuzz fuzz, (p103) power_restored(e30), ninety five percent {Len 4.00 closecaption HEV_18P}
+HEV_19P hev_vox/(p103) fuzz fuzz, (p103) power_level_is onehundred percent {Len 4.62 closecaption HEV_19P}
+
+//========================================//
+//	HEV- AMMO DEPLETION		//
+//=======================================//
+HEV_AMO0 hev_vox/blip ammo_depleted {Len 2.16 closecaption HEV.ammo_depleted}
+
+//=======================================================//
+//	HEV- SUIT SYSTEMS STATUSES (NOT USED EVER)	//
+//=======================================================//
+//HEV_V0 hev_vox/blip, voice_on {Len 3.17}
+//HEV_V1 hev_vox/blip, voice_off {Len 3.06}
+//HEV_E0 hev_vox/buzz buzz, armor_gone {Len 2.95 closecaption HEV.armor_gone}
+//HEV_E1 hev_vox/buzz, armor_gone {Len 2.62 closecaption HEV.armor_gone}
+//HEV_E2 hev_vox/buzz, hev_critical_fail {Len 4.75 closecaption HEV.hev_critical_fail}
+//HEV_E3 hev_vox/buzz, hev_general_fail {Len 3.22 closecaption HEV.hev_general_fail}
+//HEV_E4 hev_vox/buzz, hev_damage {Len 3.53 closecaption HEV.hev_damage}
+//HEV_E5 hev_vox/buzz, powermove_overload {Len 4.98 closecaption HEV.powermove_overload}
+
+//=======================================================//
+//	HEV- AMMO, BIOHAZARD, AND RADIATION		//
+//=======================================================//
+HEV_DET0 hev_vox/blip blip blip, biohazard_detected {Len 3.67 closecaption HEV.biohazard_detected}
+HEV_DET1 hev_vox/blip blip blip, chemical_detected {Len 4.33 closecaption HEV.chemical_detected}
+HEV_DET2 hev_vox/blip blip blip, radiation_detected {Len 5.08 closecaption HEV.radiation_detected}
+HEV_DET3 hev_vox/blip blip blip, bio_reading {Len 2.93 closecaption HEV.bio_reading}
+HEV_DET4 hev_vox/blip blip blip, antitoxin_shot(e50), onehundred percent {Len 3.67 closecaption HEV.biohazard_detected}
+HEV_DET5 hev_vox/blip blip blip, antitoxin_shot(e25) radiation_detected(e50), onehundred percent {Len 5.37 closecaption HEV.radiation_detected}
+
+//===============================================================//
+// 	OVERHEAD ANNOUNCEMENTS - POST HECU TAKEOVER	//
+//===============================================================//
+
+// OFFICE COMPLEX
+C1A2_0 vox_overhead/c1a2_00 {Len 9.00 closecaption C1A2_00}
+C1A2_1 vox_overhead/c1a2_01 {Len 9.00 closecaption C1A2_01}
+C1A2_2 vox_overhead/c1a2_02 {Len 9.00 closecaption C1A2_02}
+C1A2_3 vox_overhead/c1a2_03 {Len 9.00 closecaption C1A2_03}
+C1A2_4 vox_overhead/c1a2_04 {Len 9.00 closecaption C1A2_04}
+C1A2_5 vox_overhead/c1a2_05 {Len 9.00 closecaption C1A2_05}
+C1A2_6 vox_overhead/c1a2_06 {Len 9.00 closecaption C1A2_06}
+C1A2_7 vox_overhead/c1a2_07 {Len 9.00 closecaption C1A2_07}
+C1A2_8 vox_overhead/c1a2_08 {Len 9.00 closecaption C1A2_08}
+C1A2_9 vox_overhead/c1a2_09 {Len 9.00 closecaption C1A2_09}
+C1A2_10 vox_overhead/c1a2_10 {Len 9.00 closecaption C1A2_10}
+C1A2_11 vox_overhead/c1a2_11 {Len 9.00 closecaption C1A2_11}
+
+// WGH
+C1A3_0 buzwarn buzwarn(e95) attention.(e75) all(e75) science(e75) personnel(e75) report(e75) topside(e65) four(e75) immediate(e75) questioning {Len 8.16 closecaption C1A3_0}
+C1A3_1 buzwarn(p95) buzwarn(p95 e95) all(e85) personnel(e85) evacuate(e85) high(e75) security(e70) materials(e60) storage(e70) facility {Len 7.53 closecaption C1A3_1}
+C1A3_2 buzwarn(p130) buzwarn(p130 e95) emergency(e75) uranium(e75) containment(e75) team,(e35) to(e95) sector(e70) d(e110) {Len 10.044 closecaption C1A3_2}
+C1A3_3 deeoo(e80) turret(e85) maintenance(e60) team,(e85) report(e75) to(e70) command(e70) and(e70) communications(e70) center {Len 15.32 closecaption C1A3_3}
+C1A3_4 buzwarn(p98) buzwarn(p98 e95) military(e70) personnel(e85),(e75) prosecute(e75) kilo01(e85) india(e85) lima(e70) with(e75) extreme(e75) force {Len 7.28 closecaption C1A3_4}
+C1A3_5 buzwarn buzwarn buzwarn(e95) attention.  this(e65) announcement(e65) system(e75) now(e75) under(e75) military(e75) command {Len 14.88 closecaption C1A3_5}
+C1A3_6 buzwarn buzwarn(e95) search(e80) and(e80) destroy(e85) force(e75) bravo, reports(e70) secondary(e75) objective(e70) terminated {Len 7.87 closecaption C1A3_6}
+C1A3_7 dadeda(p98 e95) bravo(e85) force(e85) reports(e85) hotel(e85) sierra(e85) mike(e85) facility(e85) is(e85) secured {Len 13.6 closecaption C1A3_7}
+C1A3_8 buzwarn buzwarn(t15 e95) attention.(e75) all(e65) military(e75) personnel(e75),(e75) atomic(e75) biological(e85) chemical(e85) alert {Len 6.76 closecaption C1A3_8}
+C1A3_9 buzwarn buzwarn(t15 e95) attention.(e37) all(e65) military(e75) personnel(e75),(e75) extreme(e85) atomic(e75) biological(e95) chemical(e95) alert {Len 7.40 closecaption C1A3_9}
+C1A3_10 buzwarn(p95) buzwarn(p95) buzwarn(p95 e95) attention.  black(e70) mesa(e70) announcement(e70) system(e70) now(e70) under(e70) military(e70) command {Len 16.40 closecaption C1A3_10}
+
+// ON A RAIL
+C2A2B_0 buzwarn(p110 e85) buzwarn(p110 e85) attention(e65) all(e75) personnel(e75). launch(e75) control(e75) train(e75) activated(e85), clear(e75) area(e75) immediately {Len 16.10 closecaption C2A2B_0}
+C2A2B_1 dadeda(e85) attention(e90), satellite(e75) rocket(e75) silo(e75) reports(e85) status(e85) green(e55) four(e90) launch {Len 14.46 closecaption C2A2B_1}
+C2A2C_launch_0 buzwarn(p95) buzwarn(p95) buzwarn(p95 e95) satellite(e70) launch(e70) system(e70) activated. {Len 9.13 closecaption C2A2C_launch_0}
+C2A2C_launch_1 twenty(e75) seconds(e70) remaining {Len 3.71 closecaption C2A2C_launch_1}
+C2A2C_launch_2 fifteen seconds {Len 2.76 closecaption C2A2C_launch_2}
+C2A2C_launch_3 ten nine eight seven six five four three two one zero launch(e65) is(e70) go {Len 14.84 closecaption C2A2C_launch_3}
+
+// BLAST PIT
+C1A4_1 deeoo(e80) (e75) repair crew report to(e80) track control, sector e(e100) {Len 5.75 closecaption C1A4_1}
+C1A4_2 deeoo(e80) (e75) maintenance(e65) team blue. check heat exchange coolant level(e100) {Len 5.55 closecaption C1A4_2}
+C1A4_3 deeoo(e80) (e75) maintenance(e65) team green, check voltage on cable seven two nine(e100) {Len 6.73 closecaption C1A4_3}
+C1A4_4 (p130) buzwarn buzwarn (p98 e75) medical team to materials storage facility, team bravo reports men down {Len 8.74 closecaption C1A4_4}
+C1A4_5 (p130) buzwarn buzwarn (p98 e75) alpha force move out, science personnel resistance extreme {Len 6.68 closecaption C1A4_5}
+C1A4_6 dadeda (p98 e75) attention. all black mesa security personnel wanted four immediate questioning {Len 8.48 closecaption C1A4_6}
+C1A4_7 dadeda (p98 e75) attention. gordon freeman, report to military personnel four immediate security check {Len 9.24 closecaption C1A4_7}
+C1A4_8 buzwarn buzwarn (p102) warning. (e75) hostile biological forms detected in track control area e {Len 8.65 closecaption C1A4_8}
+
+//todo
+//C1A4_ROCKET_DISABLED buzwarn buzwarn. attention, experimental rocket test fire disengaged. {Len 7.38 closecaption C1A4_ROCKET_DISABLED}
+//C1A4_FUEL_POW_OFF fuel and power must be engaged to activate rocket test fire {Len 6.49 closecaption C1A4_FUEL_POW_OFF}
+//C1A4_FUEL_OFF fuel must be engaged to activate rocket test fire. {Len 6.49 closecaption C1A4_FUEL_OFF}
+//C1A4_POW_OFF power must be engaged to activate rocket test fire. {Len 6.49 closecaption C1A4_POW_OFF}
+
+// POWER UP
+//C2A1_0 buzwarn buzwarn. warning. track power failure. check lower level power plant. {Len 8.00 closecaption C2A1_0}
+C2A1_1 (e75) deeoo maintenance(e65) team yellow, please(s0) service relay three hundred ninety four(e100) {Len 6.68 closecaption C2A1_1}
+C2A1_2 (p130) dadeda (p98 e95) attention. (e75) gordon freeman, report to military(e70) personnel four immediate security check {Len 8.72 closecaption C2A1_2}
+C2A1_3 (p130) buzwarn buzwarn (p98 e75) delta(e95) team reports(e90) launch control secured {Len 5.51 closecaption C2A1_3}
+C2A1_4 buzwarn buzwarn buzwarn danger. (e75) turret defense systems activated, silo e {Len 7.86 closecaption C2A1_4}
+C2A1_5 deeoo(e80) (e75) sector e track control, please report status {Len 5.43 closecaption C2A1_5}
+C2A1_6 (p130) buzwarn buzwarn (p98 e75) echo force reports perimeter breach, sector e {Len 5.79 closecaption C2A1_6}
+C2A1_7 (p130) buzwarn buzwarn (p98 e75) attention. search and(e65) destroy(e85) force go to code three. eliminate(e85) all biological forms. {Len 10.03 closecaption C2A1_7}
+C2A1_8 buzwarn buzwarn danger. (e75) unauthorized detonation detected in experimental propulsion lab {Len 9.24 closecaption C2A1_8}
+
+//todo
+//POWER_OFF buzwarn main power is not on {Len 3.51 closecaption POWER_OFF}
+//POWER_ON deeoo main power is on {Len 2.93 closecaption POWER_OFF}
+
+// QUESTIONABLE ETHICS
+C2A4_0 buzwarn buzwarn (e75) warning. emergency containment system activated {Len 8.00 closecaption C2A4_0}
+C2A4_1 buzwarn buzwarn (e75) alert. biological containment breach detected {Len 8.00 closecaption C2A4_1}
+C2A4_2 buzwarn buzwarn warning. (e75) biological sterilization system activated {Len 8.00 closecaption C2A4_2}
+C2A4_3 (p130) buzwarn buzwarn (p98 e75) attention. hostile (e70) alien military force (e75) detected. advanced biological research(e70) center {Len 8.00 closecaption C2A4_3}
+C2A4_4 (p130) buzwarn buzwarn (p98 e85) search and destroy force reports back(e80) up required, engaged with extreme resistance {Len 10.00 closecaption C2A4_4}
+C2A4_5 (p130) buzwarn buzwarn (p98 e85) topside containment force alert, hostile alien military force detected {Len 10.00 closecaption C2A4_5}
+C2A4_6 (e70) deeoo primary laser status(e80) is(e80) green {Len 7.00 closecaption C2A4_6}
+C2A4_7 buzwarn buzwarn, (e75) containment system(e70) failure. use sterilization systems {Len 8.00 closecaption C2A4_7}
+C2A4_8 deeoo(e80) attention. (e70) all topside military personnel, clear helecopter hanger four {Len 8.00 closecaption C2A4_8}
+C2A4_9 buzwarn buzwarn, (e70) hostile alien breach, topside checkpoint alpha and checkpoint delta {Len 8.00 closecaption C2A4_9}
+C2A4_10 (p130) buzwarn buzwarn (p98 e75) alert. topside containment force, use any force(e70) to prosecute(e80) gordon(e70) freeman. you are authorized to shoot(e80) on(e65) sight. {Len 12.00 closecaption C2A4_10}
+C2A4_11 (p130) buzwarn buzwarn (p98 e75) alert. topside containment force, (e65) freeman may approach your perimeter {Len 10.00 closecaption C2A4_11}
+C2A4_12 doop (e75) message four(e90) gordon(e70) freeman. all(e70) science personnel will b terminated until you surrender {Len 10.00 closecaption C2A4_12}
+
+// LAMBDA CORE
+C3A2_0 buzwarn buzwarn warning. (e75) cross dimensional power field(e70) activity detected {Len 8.00 closecaption C3A2_0}
+C3A2_1 buzwarn buzwarn warning. (e75) unauthorized(e80) biological(e80) force(e55) detected in, cross dimensional power field {Len 8.00 closecaption C3A2_1}
+C3A2_2 (p130) buzwarn buzwarn (p98 e75) all(e65) personnel evacuate(e100) lambda complex, extreme dimensional malfunction(e65) detected {Len 8.00 closecaption C3A2_2}
+C3A2_3 (e75) buzwarn buzwarn buzwarn unauthorized activity detected in main(e65) reactor(e85) core {Len 8.00 closecaption C3A2_3}
+C3A2_4 buzwarn buzwarn danger. (e75) high energy exchange(e85) detected in radioactive materials(e65) handling facility {Len 8.00 closecaption C3A2_4}
+C3A2_5 buzwarn buzwarn (e75) biological force detected in primary coolant system {Len 8.00 closecaption C3A2_5}
+C3A2_6 (p120) buzwarn buzwarn (p100 e75) lambda complex reports dimensional contamination {Len 8.00 closecaption C3A2_6}
+C3A2_7 buzwarn buzwarn (e75) lambda complex reports dimensional containment system failure {Len 8.00 closecaption C3A2_7}
+C3A2_8 buzwarn buzwarn warning. (e60) primary antenna failure (e75) detected. command(e80) and(e65) communications(e80) center {Len 8.00 closecaption C3A2_8}
+C3A2_9 deeoo (e70) any damage control team to. lambda reactor(e90) complex(e100) {Len 8.00 closecaption C3A2_9}
+C3A2_10 buzwarn buzwarn danger. (e70) radiation(e80) leak detected(e75) in primary antenna area. command(e80) and(e65) communications(e80) center {Len 8.00 closecaption C3A2_10}
+
+
+//========================================================
+// DOORS - LOCKED   (LEGACY HL1- CURRENTLY NOT USED IN BM)
+//========================================================
+// access denied
+//NA path/wavname {Len 0}
+
+// security lockout
+//ND path/wavname {Len 0}
+
+// blast door
+//NF path/wavname {Len 0}
+
+// fire door
+//NFIRE path/wavname {Len 0}
+
+// chemical door
+//NCHEM path/wavname {Len 0}
+
+// radiation door
+//NRAD path/wavname {Len 0}
+
+// gen containment
+//NCON path/wavname {Len 0}
+
+// maintenance door
+//NH path/wavname {Len 0}
+
+// broken door
+//NG path/wavname {Len 0}
+
+//I don't think you're supposed to go in there Gordon..
+NA0 access(e75) denied {Len 2.6 closecaption NA0}
+NA1 access(e75) is(e75) denied {Len 3.6 closecaption NA1}
+NA2 unauthorized(e75) access {Len 3.0 closecaption NA2}
+NA3 illegal(e75) access {Len 2.4 closecaption NA3}
+NA4 this(e75) door(e75) is(e75) locked {Len 3.8 closecaption NA4}
+NA5 unauthorized(e75) access {Len 3.0 closecaption NA5}
+NA6 entry(e75) forbidden {Len 2.5 closecaption NA6}
+NA7 entry(e75) not(e75) permitted {Len 3.6 closecaption NA7}
+NA8 no(e75) unauthorized(e75) personnel {Len 4.2 closecaption NA8}
+NA9 you(e65) do(e65) not(e65) have(e65) access(e65) to(e65) this(e65) facility {Len 8.9 closecaption NA9}
+NA10 (p102) sorry, you(e60) may(e60) not(e65) enter {Len 6 closecaption NA10}
+NA11 (p102) sorry, this(e75) door(e75) is(e75) locked {Len 2.61 closecaption NA11}
+NA12 (p102) please,(e75) move(e65) away(e65) from(e65) this(e65) area {Len 3.36 closecaption NA12}
+NA13 (p102) please,(e75) move(e65) away(e65) from(e65) door {Len 2.84 closecaption NA13}
+NA14 (p103) you(e60) will(e60) not(e60) get(e60) in(e60) {Len 2.04 closecaption NA14}
+NA15 (p103) entry(e65) is(e65) not(e65) an(e60) option {Len 2.38 closecaption NA15}
+NA16 (p104) will(e75) we(e75) do(e75) this(e75) all(e75) day {Len 2.41 closecaption NA16}
+NA17 (p104) move(e75) on(e75) immediately {Len 1.97 closecaption NA17}
+NA18 (p105) no, no, and no(p80) {Len 2.76 closecaption NA18}
+
+//========================================================
+// DOORS - UNLOCKED
+//========================================================
+// access granted
+//EA path/wavname {Len 0}
+
+// security door
+//ED path/wavname {Len 0}
+
+// blast door
+//EF path/wavname {Len 0}
+
+// fire door
+//EFIRE path/wavname {Len 0}
+
+// chemical door
+//ECHEM path/wavname {Len 0}
+
+// radiation door
+//ERAD path/wavname {Len 0}
+
+// gen containment
+//ECON path/wavname {Len 0}
+
+// maintenance door
+//EH path/wavname {Len 0}
+
+//====================================================================//
+// ASSASSIN   (the following below seems to pertain to hl2 assassin/overwatch stuffz. Must look into...//
+//====================================================================//
+V_RNDCODECRIM_P0 criminaltrespass63
+V_RNDCODECRIM_P1 nonsanctionedarson51
+V_RNDCODECRIM_P2 posession69
+V_RNDCODECRIM_P3 publicnoncompliance507
+V_RNDCODECRIM_P4 recklessoperation99
+V_RNDCODECRIM_P5 resistingpacification148
+V_RNDCODECRIM_P6 riot404
+V_RNDCODECRIM_P7 fugitive17f
+V_RNDCODECRIM_P8 weapon94
+V_RNDCODECRIM_P9 alarms62
+V_RNDCODECRIM_P10 assault243
+V_RNDCODECRIM_P11 illegalcarrying95
+V_RNDCODECRIM_P12 unlawfulentry603
+
+V_G1_LOCATION_P0 block
+V_G1_LOCATION_P1 zone
+V_G1_LOCATION_P2 sector
+V_G1_LOCATION_P3 industrialzone
+V_G1_LOCATION_P4 restrictedblock
+V_G1_LOCATION_P5 repurposedarea
+V_G1_LOCATION_P5 condemnedzone
+V_G1_LOCATION_P6 nonpatrolregion
+V_G1_LOCATION_P7 distributionblock
+V_G1_LOCATION_P8 productionblock
+V_G1_LOCATION_P9 highpriorityregion
+V_G1_LOCATION_P10 terminalrestrictionzone
+V_G1_LOCATION_P11 controlsection
+
+V_G3_NUMBP0 zero 
+V_G3_NUMBP1 one
+V_G3_NUMBP2 two
+V_G3_NUMBP3 three
+V_G3_NUMBP4 four
+V_G3_NUMBP5 five
+V_G3_NUMBP6 six
+V_G3_NUMBP7 seven
+V_G3_NUMBP8 eight
+V_G3_NUMBP9 nine
+
+V_G2_SUSPECT_P0 UPI
+V_G2_SUSPECT_P1 freeman
+V_G2_SUSPECT_P2 subject
+
+ASSASSIN_IDLE0 npc/overwatch/radiovoice/(v50) on3 allunitsbolfor243suspect off2 {Len 1.5 }
+ASSASSIN_IDLE1 npc/overwatch/radiovoice/(v50) on3 statuson243suspect off2 {Len 1.5 }
+ASSASSIN_IDLE2 npc/overwatch/radiovoice/(v50) on3 reporton V_G2_SUSPECT_P off2 {Len 1.5 }
+ASSASSIN_IDLE3 npc/overwatch/radiovoice/(v50) on3 antifatigueration3mg off2 {Len 1.5 }
+ASSASSIN_IDLE4 npc/overwatch/radiovoice/(v50) on3 accomplicesoperating off2 {Len 1.5 }
+ASSASSIN_IDLE5 npc/overwatch/radiovoice/(v50) on3 restrictedincursioninprogress, officerat V_G1_LOCATION_P V_G3_NUMBP investigateandreport off2 {Len 1.5}
+
+ASSASSIN_ALERT_IDLE0 npc/overwatch/radiovoice/(v50) on3 allunitsbolfor243suspect off2 {Len 1.5 }
+ASSASSIN_ALERT_IDLE1 npc/overwatch/radiovoice/(v50) on3 statuson243suspect off2 {Len 1.5 }
+ASSASSIN_ALERT_IDLE2 npc/overwatch/radiovoice/(v50) on3 reporton V_G2_SUSPECT_MAP__P off2 {Len 1.5 }
+ASSASSIN_ALERT_IDLE3 npc/overwatch/radiovoice/(v100) on3 rewardnotice off2 {Len 1.5}
+ASSASSIN_ALERT_IDLE4 npc/overwatch/radiovoice/(v100) on3 allunitsreturntocode12 off2 {Len 1.5}
+ASSASSIN_ALERT_IDLE5 npc/overwatch/radiovoice/(v100) on3 finalverdictadministered, allunitsbeginwhitnesssterilization off2 {Len 1.5}
+ASSASSIN_ALERT_IDLE6 npc/overwatch/radiovoice/(v100) on3 sociostabilizationrestored off2 {Len 1.5}
+
+ASSASSIN_NEW_ENEMY0 npc/overwatch/radiovoice/(v50) on3 switchcomtotac3, reportplease off4 {Len 1.5 closecaption }
+ASSASSIN_NEW_ENEMY1 npc/overwatch/radiovoice/(v60) on3 allunitsat V_G1_LOCATION_P0 V_G3_NUMBP, beginscanning10-0 off2 {Len 1.5}
+ASSASSIN_NEW_ENEMY2 npc/overwatch/radiovoice/(v60) on3 switchtotac5reporttocp off2 {Len 1.5}
+
+ASSASSIN_COMBAT0 npc/overwatch/radiovoice/(v100) on3 allunitsdeliverterminalverdict off2 {Len 2.5 } 
+ASSASSIN_COMBAT1 npc/overwatch/radiovoice/(v100) on3 allunitsverdictcodeis V_RNDJUDGEP off2 {Len 2.5 }
+ASSASSIN_COMBAT2 npc/overwatch/radiovoice/(v100) on3 suspectmalignantverdictcodeis V_RNDJUDGEP off2 {Len 2.5 }
+ASSASSIN_COMBAT3 npc/overwatch/radiovoice/(v100) on3 suspendnegotiations officerclosingonsuspect off2 {Len 1.5}
+ASSASSIN_COMBAT4 npc/overwatch/radiovoice/(v100) on3 officerclosingonsuspect off2 {Len 1.5}
+ASSASSIN_COMBAT5 npc/overwatch/radiovoice/(v100) on3 allunitsapplyforwardpressure off2 {Len 1.5}

@@ -1,0 +1,128 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "voice"
+  {
+    event speak "player.guard.dominate01"
+    {
+      time 0.253334 2.775012
+      param "player.guard.dominate01"
+      fixedlength
+      tags
+      {
+        "Woo" 0.058201
+        "think" 0.304233
+        "got" 0.584656
+        "ASS" 0.716931
+        "kicked" 0.865079
+      }
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "bg_accentFwd"
+    {
+      time 1.253333 3.620000
+      param "bg_accentFwd"
+      absolutetags playback_time
+      {
+        "apex" 0.190689
+        "extreme" 0.419171
+        "loop" 0.554366
+        "end" 0.651549
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.138889
+        "extreme" 0.361111
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      sequenceduration 2.433333
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "head"
+    {
+      time 0.113333 3.133333
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.2767 0.4200
+          0.7318 0.4000
+          0.9318 0.4400
+          1.4806 0.4800
+          1.6341 0.5400
+          1.8791 0.4400
+          1.9512 0.5500
+          2.2093 0.6100
+          2.3233 0.5600
+          2.6023 0.5000
+        }
+      }
+    }
+  }
+  channel "expression"
+  {
+    event expression "b_smile_evil00"
+    {
+      time 0.013333 3.380000
+      param "humans\guard\expressions_guard"
+      param2 "b_smile_evil00"
+      event_ramp
+      {
+        0.2469 0.7440
+        0.6749 1.0000
+        1.5404 0.7440
+        2.9935 0.7280
+      }
+    }
+    event expression "b_afraid03"
+    {
+      time 1.760000 2.913333
+      param "humans\guard\expressions_guard"
+      param2 "b_afraid03"
+      event_ramp
+      {
+        0.2563 0.3440
+        0.7406 0.3840
+      }
+    }
+    event expression "b_freaked_mouthopen"
+    {
+      time 0.153333 1.153333
+      param "humans\guard\expressions_guard"
+      param2 "b_freaked_mouthopen"
+      event_ramp
+      {
+        0.2906 1.0000
+        0.5844 0.8880
+      }
+    }
+  }
+  channel "look"
+  {
+    event lookat "Look at !enemy"
+    {
+      time 0.013333 3.213333
+      param "!enemy"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "64"
+  "ExpressionTool" "86"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

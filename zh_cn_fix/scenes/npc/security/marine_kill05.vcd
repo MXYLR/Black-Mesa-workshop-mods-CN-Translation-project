@@ -1,0 +1,130 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "voice"
+  {
+    event speak "player.guard.revenge02"
+    {
+      time 0.326667 3.049683
+      param "player.guard.revenge02"
+      fixedlength
+      tags
+      {
+        "UP" 0.610294
+        "YOURS" 0.799020
+        "that" 0.122549
+      }
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "bg_down"
+    {
+      time 1.206667 3.940000
+      param "bg_down"
+      event_ramp
+      {
+        0.8300 0.6240
+        1.8550 0.6320
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.215685
+        "extreme" 0.376829
+        "loop" 0.570732
+        "end" 0.645366
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.086207
+        "extreme" 0.241379
+        "loop" 0.482759
+        "end" 0.672414
+      }
+      sequenceduration 1.966667
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "head"
+    {
+      time 0.020000 3.686667
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "head_rightleft" range 30.0 -30.0 
+        {
+          0.6698 0.4500
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.3163 0.4700
+          0.4791 0.5000
+          0.6488 0.6900
+          1.0744 0.7200
+          1.5628 0.6500
+          1.7540 0.6900
+          1.9744 0.8100
+          2.3642 0.8100
+          2.5923 0.4900
+          3.1767 0.3900
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+        }
+      }
+    }
+  }
+  channel "expression"
+  {
+    event expression "b_smile_evil00"
+    {
+      time 1.380000 3.793333
+      param "humans\guard\expressions_guard"
+      param2 "b_smile01a"
+      event_ramp
+      {
+        0.2469 0.7440
+        0.6749 1.0000
+        1.5109 0.9760
+        2.0402 0.7280
+      }
+    }
+    event expression "b_incombat_headcrabug01"
+    {
+      time 0.253333 3.786667
+      param "humans\guard\expressions_guard"
+      param2 "b_incombat_headcrabug01"
+      event_ramp
+      {
+        0.3175 0.6960
+        1.5550 0.6560
+        1.8350 0.2960
+        2.3750 0.3040
+        2.9450 0.2400
+      }
+    }
+  }
+  channel "look"
+  {
+    event lookat "Look at !enemy"
+    {
+      time 0.013333 3.933334
+      param "!enemy"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "40"
+  "ExpressionTool" "64"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

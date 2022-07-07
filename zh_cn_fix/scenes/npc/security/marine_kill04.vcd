@@ -1,0 +1,130 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "voice"
+  {
+    event speak "player.guard.dominate10"
+    {
+      time 0.326667 2.284467
+      param "player.guard.dominate10"
+      fixedlength
+      tags
+      {
+        "really" 0.447099
+        "lead" 0.853242
+      }
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "bg_right"
+    {
+      time 0.273334 2.853334
+      param "bg_right"
+      event_ramp
+      {
+        0.4625 0.1360
+        0.8469 0.3520
+        1.5265 0.3920
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.211290
+        "extreme" 0.329358
+        "loop" 0.486782
+        "end" 0.696681
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.153846
+        "extreme" 0.292308
+        "loop" 0.476923
+        "end" 0.723077
+      }
+      sequenceduration 2.200000
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "head"
+    {
+      time 0.113333 2.706666
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "head_rightleft" range 30.0 -30.0 
+        {
+          0.6767 0.4900
+          0.9977 0.4400
+          1.2186 0.6100
+          1.4953 0.6300
+          1.8465 0.5300
+          2.0721 0.5300
+          2.2977 0.4700
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.4116 0.5300
+          0.9326 0.6000
+          1.0930 0.3400
+          1.4837 0.2800
+          1.7419 0.3700
+          1.8953 0.6100
+          2.3070 0.4600
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+        }
+      }
+    }
+  }
+  channel "expression"
+  {
+    event expression "b_smile_evil00"
+    {
+      time 0.193333 3.206666
+      param "humans\guard\expressions_guard"
+      param2 "b_smile01a"
+      event_ramp
+      {
+        0.2469 0.7440
+        0.6749 1.0000
+        1.6671 0.9760
+        2.6402 0.7280
+      }
+    }
+    event expression "b_incombat02"
+    {
+      time 1.166667 2.573333
+      param "humans\guard\expressions_guard"
+      param2 "b_incombat02"
+      event_ramp
+      {
+        0.4938 1.0000
+        0.9219 0.9840
+      }
+    }
+  }
+  channel "look"
+  {
+    event lookat "Look at !enemy"
+    {
+      time 0.013333 3.266667
+      param "!enemy"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "64"
+  "ExpressionTool" "86"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

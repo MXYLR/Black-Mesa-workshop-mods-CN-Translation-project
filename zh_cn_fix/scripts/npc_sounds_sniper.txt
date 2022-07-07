@@ -1,0 +1,163 @@
+//*****************************************************
+// Combine Sniper sounds
+
+
+"NPC_Sniper.Idle"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"rndwave"
+	{
+		"wave"	"vo/npc/hecu_grunt/male/hg_check12_subd01.wav"
+		"wave"	"vo/npc/hecu_grunt/male/hg_clear02.wav"
+		"wave"	"vo/npc/hecu_grunt/male/hg_clear01.wav"
+		"wave"	"vo/npc/hecu_grunt/male/hg_clear15.wav"
+		"wave"	"vo/npc/hecu_grunt/male/hg_clear14.wav"
+	}
+}
+
+"NPC_Sniper.Alert"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"rndwave"
+	{
+	        "wave"	"vo/npc/hecu_grunt/male/hg_monst04.wav"
+	        "wave"	"vo/npc/hecu_grunt/male/hg_monst02.wav"
+	        "wave"	"vo/npc/hecu_grunt/male/hg_monst05_var01.wav"
+	}
+}
+
+"NPC_Sniper.Die"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"rndwave"
+	{
+		"wave"	"vo/npc/hecu_grunt/male/hg_gibdeath_gluon01.wav"
+		"wave"	"vo/npc/hecu_grunt/male/hg_gibdeath_gluon02.wav"
+		"wave"	"vo/npc/hecu_grunt/male/hg_gibdeath_gluon03.wav"
+		"wave"	"vo/npc/hecu_grunt/male/hg_gibdeath_gluon04.wav"
+		"wave"	"vo/npc/hecu_grunt/male/hg_gibdeath_gluon05.wav"
+		"wave"	"vo/npc/hecu_grunt/male/hg_gibdeath_gluon06.wav"
+		"wave"	"vo/npc/hecu_grunt/male/hg_gibdeath_gluon07.wav"
+	}
+}
+
+"NPC_Sniper.TargetHidden"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"rndwave"
+	{
+		"wave"	"vo/npc/hecu_grunt/male/hg_taunt05_var01.wav"
+		"wave"	"vo/npc/hecu_grunt/male/hg_taunt06_var02.wav"
+		"wave"	"vo/npc/hecu_grunt/male/hg_taunt06_var03.wav"
+
+	}
+}
+"NPC_Sniper.CoverDestroyed"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"rndwave"
+	{
+		"wave"	"vo/npc/hecu_grunt/male/hgpain06.wav"
+		"wave"	"npc/sniper/sn_targetdisplacing.wav"
+		"wave"	"npc/sniper/sn_blockeliminated.wav"
+		"wave"	"npc/sniper/sn_blockdown.wav"
+	}
+}
+"NPC_Sniper.TargetDestroyed"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"rndwave"
+	{
+		"wave"	"vo/npc/hecu_grunt/male/hg_taunt03.wav"
+	}
+}
+
+"NPC_Sniper.HearDanger"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"rndwave"
+	{
+		"wave"	"vo/npc/hecu_grunt/male/hg_pain06.wav"
+		"wave"	"vo/npc/hecu_grunt/male/hg_pain05.wav"
+		"wave"	"vo/npc/hecu_grunt/male/hg_pain02.wav"
+		"wave"	"vo/npc/hecu_grunt/male/hg_pain12.wav"
+	}
+}
+
+"NPC_Sniper.FireBullet"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"		"97,104"
+
+	"soundlevel"	"SNDLVL_GUNFIRE"
+
+	"rndwave"
+	{
+		"wave"	"^npc/sniper/sniper1_nearfar.wav"
+	}
+}
+
+"NPC_Sniper.Reload"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.8"
+	"pitch"		"100"
+
+	"soundlevel"	"SNDLVL_GUNFIRE"
+
+	"rndwave"
+	{
+		"wave"	"^npc/sniper/reload1.wav"
+	}
+}
+
+
+"NPC_Sniper.SonicBoom"
+{
+	"channel"	"CHAN_WEAPON"
+	"volume"	"0.65"
+	"pitch"		"95,106"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"npc/sniper/sniper1_close.wav"
+	}
+}

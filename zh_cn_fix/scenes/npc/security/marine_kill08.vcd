@@ -1,0 +1,109 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "voice"
+  {
+    event speak "player.guard.revenge07"
+    {
+      time 0.286667 2.062245
+      param "player.guard.revenge07"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "bg_down"
+    {
+      time 0.313334 2.560000
+      param "bg_down"
+      event_ramp
+      {
+        0.6750 0.3680
+        1.6531 0.3760
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.155582
+        "extreme" 0.348071
+        "loop" 0.563502
+        "end" 0.703264
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.086207
+        "extreme" 0.241379
+        "loop" 0.482759
+        "end" 0.672414
+      }
+      sequenceduration 1.966667
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "head"
+    {
+      time 0.113333 2.240000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.1209 0.5700
+          0.5767 0.5700
+          0.8581 0.3900
+          1.1023 0.4500
+          1.5930 0.4900
+        }
+      }
+    }
+  }
+  channel "expression"
+  {
+    event expression "b_smile_evil00"
+    {
+      time 0.013333 2.739999
+      param "humans\guard\expressions_guard"
+      param2 "b_smile01a"
+      event_ramp
+      {
+        0.2469 0.7440
+        0.6749 1.0000
+        1.8870 0.7440
+        2.3535 0.7280
+      }
+    }
+    event expression "b_incombat01"
+    {
+      time 0.120000 1.640001
+      param "humans\guard\expressions_guard"
+      param2 "b_incombat01"
+      event_ramp
+      {
+        0.4344 0.8560
+        0.8561 0.7680
+      }
+    }
+  }
+  channel "look"
+  {
+    event lookat "Look at !enemy"
+    {
+      time 0.013333 2.726666
+      param "!enemy"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "64"
+  "ExpressionTool" "86"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

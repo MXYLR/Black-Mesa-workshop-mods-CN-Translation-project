@@ -1,0 +1,3892 @@
+//
+//
+// NOTE:  AUTOMATICALLY GENERATED FILE, ANY HAND EDITED COMMENTS WILL BE LOST!!!
+// NOTE:  AUTOMATICALLY GENERATED FILE, ANY HAND EDITED COMMENTS WILL BE LOST!!!
+// NOTE:  AUTOMATICALLY GENERATED FILE, ANY HAND EDITED COMMENTS WILL BE LOST!!!
+//
+// 0.825		1.0f
+//
+//-----------------------------------------------------------------------------
+// common attenuation values
+//-----------------------------------------------------------------------------
+//
+// DON'T USE THESE - USE SNDLVL_ INSTEAD!!!
+//	ATTN_NONE		0.0f	
+//	ATTN_NORM		0.8f
+//	ATTN_IDLE		2.0f
+//	ATTN_STATIC		1.25f 
+//	ATTN_RICOCHET	1.5f
+//	ATTN_GUNFIRE	0.27f
+//
+//	SNDLVL_NONE		= 0,
+//	SNDLVL_25dB		= 25,
+//	SNDLVL_30dB		= 30,
+//	SNDLVL_35dB		= 35,
+//	SNDLVL_40dB		= 40,
+//	SNDLVL_45dB		= 45,
+//	SNDLVL_50dB		= 50,	= 3.9
+//	SNDLVL_55dB		= 55,	= 3.0
+//	SNDLVL_IDLE		= 60,	= 2.0
+//	SNDLVL_TALKING		= 60,	= 2.0
+//	SNDLVL_60dB		= 60,	= 2.0
+//	SNDLVL_65dB		= 65,	= 1.5
+//	SNDLVL_STATIC		= 66,	= 1.25
+//	SNDLVL_70dB		= 70,	= 1.0
+//	SNDLVL_NORM		= 75,
+//	SNDLVL_75dB		= 75,	= 0.8
+//	SNDLVL_80dB		= 80,	= 0.7
+//	SNDLVL_85dB		= 85,	= 0.6
+//	SNDLVL_90dB		= 90,	= 0.5
+//	SNDLVL_95dB		= 95,
+//	SNDLVL_100dB	= 100,	= 0.4
+//	SNDLVL_105dB	= 105,
+//	SNDLVL_120dB	= 120,
+//	SNDLVL_130dB	= 130,
+//	SNDLVL_GUNFIRE	= 140, = 0.27
+//	SNDLVL_140dB	= 140,	= 0.2
+//	SNDLVL_150dB	= 150,	= 0.2
+//
+
+//////////////////////////////////////////////////////////////
+// Generic Death Sounds for Marines
+// Now with custom dedicated sounds spliced from the OnFire lines -CitizenFive
+
+"NPC_hgrunt.Death"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"95, 105"
+	"soundlevel"	"SNDLVL_85dB"
+
+	"rndwave"
+	{
+		"wave"	"vo/npc/hecu_grunt/$gender/hg_death01.wav"
+		"wave"	"vo/npc/hecu_grunt/$gender/hg_death02.wav"
+		"wave"	"vo/npc/hecu_grunt/$gender/hg_death03.wav"
+		"wave"	"vo/npc/hecu_grunt/$gender/hg_death04.wav"
+		"wave"	"vo/npc/hecu_grunt/$gender/hg_death05.wav"
+		"wave"	"vo/npc/hecu_grunt/$gender/hg_death06.wav"
+		"wave"	"vo/npc/hecu_grunt/$gender/hg_death07.wav"
+		"wave"	"vo/npc/hecu_grunt/$gender/hg_death08.wav"
+		//"wave"	"vo/npc/hecu_grunt/$gender/hg_hit05.wav"
+		//"wave"	"vo/npc/hecu_grunt/$gender/hg_hit06.wav"
+		"wave"	"vo/npc/hecu_grunt/$gender/hg_hit08.wav"
+		"wave"	"vo/npc/hecu_grunt/$gender/hg_hit10.wav"
+	}
+}
+
+// Death Sounds for Marines (when gibbed)
+
+"NPC_hgrunt.GibDeath"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"	"SNDLVL_85dB"
+
+	"rndwave"
+	{
+		"wave"	"vo/npc/hecu_grunt/$gender/hg_gibdeath01.wav"
+		"wave"	"vo/npc/hecu_grunt/$gender/hg_gibdeath02.wav"
+		"wave"	"vo/npc/hecu_grunt/$gender/hg_gibdeath03.wav"
+		"wave"	"vo/npc/hecu_grunt/$gender/hg_gibdeath04.wav"
+		"wave"	"vo/npc/hecu_grunt/$gender/hg_gibdeath05.wav"
+		"wave"	"vo/npc/hecu_grunt/$gender/hg_gibdeath06.wav"
+		"wave"	"vo/npc/hecu_grunt/$gender/hg_gibdeath07.wav"
+		"wave"	"vo/npc/hecu_grunt/$gender/hg_gibdeath08.wav"
+		"wave"	"vo/npc/hecu_grunt/$gender/hg_gibdeath09.wav"
+		"wave"	"vo/npc/hecu_grunt/$gender/hg_gibdeath10.wav"
+		"wave"	"vo/npc/hecu_grunt/$gender/hg_gibdeath11.wav"
+	}
+}
+
+// Death Sounds for Marines (when gibbed by gluon gun )
+// DEV NOTE: the opportunity never really happens in SP, so we may use this
+// in MultiPlayer for the funnies.
+
+"NPC_hgrunt.GibDeathGluon"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"	"SNDLVL_85dB"
+
+	"rndwave"
+	{
+		"wave"	"vo/npc/hecu_grunt/$gender/hg_gibdeath_gluon01.wav"
+		"wave"	"vo/npc/hecu_grunt/$gender/hg_gibdeath_gluon02.wav"
+		"wave"	"vo/npc/hecu_grunt/$gender/hg_gibdeath_gluon03.wav"
+		"wave"	"vo/npc/hecu_grunt/$gender/hg_gibdeath_gluon04.wav"
+		"wave"	"vo/npc/hecu_grunt/$gender/hg_gibdeath_gluon05.wav"
+		"wave"	"vo/npc/hecu_grunt/$gender/hg_gibdeath_gluon06.wav"
+	}
+}
+
+"NPC_hgrunt.Pain"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.25"
+	"pitch"			"95, 105"
+	"soundlevel"	"SNDLVL_85dB"
+
+	"rndwave"
+	{
+		"wave"	"vo/npc/hecu_grunt/$gender/hg_pain09.wav"
+		"wave"	"vo/npc/hecu_grunt/$gender/hg_pain10.wav"
+		"wave"	"vo/npc/hecu_grunt/$gender/hg_pain11.wav"
+		"wave"	"vo/npc/hecu_grunt/$gender/hg_pain12.wav"
+	}
+}
+
+// Melee Contact Sound for when Marine hits player with butt of the their weapon.
+
+"NPC_hgrunt.WeaponBash"
+{
+	"channel"       "CHAN_WEAPON"
+	"volume"       "0.800"
+	"pitch"         "PITCH_NORM"
+	"soundlevel"    "SNDLVL_NORM"
+	"wave"          "physics/body/body_medium_impact_hard6.wav"
+}
+
+// Radio chatter for idle speech, classic style
+"NPC_hgrunt.RadioChatter"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_130dB"
+
+	"rndwave"
+	{
+		"wave" "vo/npc/hecu_grunt/radio1.wav"
+		"wave" "vo/npc/hecu_grunt/radio2.wav"
+		"wave" "vo/npc/hecu_grunt/radio3.wav"
+		"wave" "vo/npc/hecu_grunt/radio4.wav"
+		"wave" "vo/npc/hecu_grunt/radio5.wav"
+		"wave" "vo/npc/hecu_grunt/radio6.wav"
+	}
+}
+
+// Gear sounds - IMPROVED CHOREOGRAPHY ONLY, this is just here for compatibility's sake
+"NPC_hgrunt.Gear"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave" "player/footsteps/concrete/fs_medium_concrete_01.wav"
+		"wave" "player/footsteps/concrete/fs_medium_concrete_02.wav"
+		"wave" "player/footsteps/concrete/fs_medium_concrete_03.wav"
+		"wave" "player/footsteps/concrete/fs_medium_concrete_04.wav"
+		"wave" "player/footsteps/concrete/fs_medium_concrete_05.wav"
+		"wave" "player/footsteps/concrete/fs_medium_concrete_06.wav"
+		"wave" "player/footsteps/concrete/fs_medium_concrete_07.wav"
+		"wave" "player/footsteps/concrete/fs_medium_concrete_08.wav"
+	}
+}
+
+//////////////////////////////////////////////////////////////
+
+"NPC_hgrunt.alert01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert01.wav"
+}
+
+"NPC_hgrunt.alert01_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert01_var02.wav"
+}
+
+"NPC_hgrunt.alert02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert02.wav"
+}
+
+"NPC_hgrunt.alert03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert03.wav"
+}
+
+"NPC_hgrunt.alert03_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert03_var02.wav"
+}
+
+"NPC_hgrunt.alert04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert04.wav"
+}
+
+"NPC_hgrunt.alert05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert05.wav"
+}
+
+"NPC_hgrunt.alert05_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert05_var02.wav"
+}
+
+"NPC_hgrunt.alert05_var03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert05_var03.wav"
+}
+
+"NPC_hgrunt.alert05_var06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert05_var06.wav"
+}
+
+"NPC_hgrunt.alert06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert06.wav"
+}
+
+"NPC_hgrunt.alert06_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert06_var02.wav"
+}
+
+"NPC_hgrunt.alert06_var03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert06_var03.wav"
+}
+
+"NPC_hgrunt.alert07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert07.wav"
+}
+
+"NPC_hgrunt.alert08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert08.wav"
+}
+
+"NPC_hgrunt.alert09_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert09_var01.wav"
+}
+
+"NPC_hgrunt.alert09_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert09_var02.wav"
+}
+
+"NPC_hgrunt.alert10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert10.wav"
+}
+
+"NPC_hgrunt.alert10_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert10_var02.wav"
+}
+
+
+"NPC_hgrunt.alert11"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert11.wav"
+}
+
+"NPC_hgrunt.alert11_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert11_var02.wav"
+}
+
+"NPC_hgrunt.alert12_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert12_var01.wav"
+}
+
+"NPC_hgrunt.alert12_var03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert12_var03.wav"
+}
+
+"NPC_hgrunt.alert13"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert13.wav"
+}
+
+"NPC_hgrunt.alert13_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert13_var02.wav"
+}
+
+"NPC_hgrunt.alert14"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert14.wav"
+}
+
+"NPC_hgrunt.alert14_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert14_var02.wav"
+}
+
+"NPC_hgrunt.alert15_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert15_var01.wav"
+}
+
+"NPC_hgrunt.alert16"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert16.wav"
+}
+
+"NPC_hgrunt.alert16_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert16_var01.wav"
+}
+
+"NPC_hgrunt.alert17"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert17.wav"
+}
+
+"NPC_hgrunt.alert18"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert18.wav"
+}
+
+"NPC_hgrunt.alert19"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert19.wav"
+}
+
+"NPC_hgrunt.alert19_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_alert19_var01.wav"
+}
+
+"NPC_hgrunt.answer01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_answer01.wav"
+}
+
+"NPC_hgrunt.answer02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_answer02.wav"
+}
+
+"NPC_hgrunt.answer03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_answer03.wav"
+}
+
+"NPC_hgrunt.answer04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_answer04.wav"
+}
+
+"NPC_hgrunt.answer05_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_answer05_var01.wav"
+}
+
+"NPC_hgrunt.answer06_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_answer06_var02.wav"
+}
+
+"NPC_hgrunt.answer07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_answer07.wav"
+}
+
+"NPC_hgrunt.answer08_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_answer08_var01.wav"
+}
+
+"NPC_hgrunt.answer09"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_answer09.wav"
+}
+
+"NPC_hgrunt.answer10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_answer10.wav"
+}
+
+"NPC_hgrunt.answer11"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_answer11.wav"
+}
+
+"NPC_hgrunt.answer11_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_answer11_var02.wav"
+}
+
+"NPC_hgrunt.answer12"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_answer12.wav"
+}
+
+"NPC_hgrunt.answer13"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_answer13.wav"
+}
+
+"NPC_hgrunt.answer14"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_answer14.wav"
+}
+
+"NPC_hgrunt.answer14_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_answer14_var02.wav"
+}
+
+"NPC_hgrunt.answer15"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_answer15.wav"
+}
+
+"NPC_hgrunt.answer15_var03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_answer15_var03.wav"
+}
+
+
+"NPC_hgrunt.answer16"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_answer16.wav"
+}
+
+"NPC_hgrunt.answer16_subd01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_answer16_subd01.wav"
+}
+
+"NPC_hgrunt.check01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_check01.wav"
+}
+
+"NPC_hgrunt.check02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_check02.wav"
+}
+
+"NPC_hgrunt.check03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_check03.wav"
+}
+
+"NPC_hgrunt.check04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_check04.wav"
+}
+
+"NPC_hgrunt.check05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_check05.wav"
+}
+
+"NPC_hgrunt.check06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_check06.wav"
+}
+
+"NPC_hgrunt.check07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_check07.wav"
+}
+
+"NPC_hgrunt.check08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_check08.wav"
+}
+
+"NPC_hgrunt.check08_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_check08_var01.wav"
+}
+
+"NPC_hgrunt.check09"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_check09.wav"
+}
+
+"NPC_hgrunt.check09_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_check09_var01.wav"
+}
+
+"NPC_hgrunt.check10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_check10.wav"
+}
+
+"NPC_hgrunt.check10_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_check10_var01.wav"
+}
+
+
+"NPC_hgrunt.check11"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_check11.wav"
+}
+
+"NPC_hgrunt.check11_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_check11_var01.wav"
+}
+
+"NPC_hgrunt.check12_subd01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_check12_subd01.wav"
+}
+
+"NPC_hgrunt.clear01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_clear01.wav"
+}
+
+"NPC_hgrunt.clear02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_clear02.wav"
+}
+
+"NPC_hgrunt.clear04_extrm01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_clear04_extrm01.wav"
+}
+
+"NPC_hgrunt.clear06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_clear06.wav"
+}
+
+"NPC_hgrunt.clear07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_clear07.wav"
+}
+
+"NPC_hgrunt.clear08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_clear08.wav"
+}
+
+"NPC_hgrunt.clear09"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_clear09.wav"
+}
+
+"NPC_hgrunt.clear10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_clear10.wav"
+}
+
+"NPC_hgrunt.clear12"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_clear12.wav"
+}
+
+"NPC_hgrunt.clear13"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_clear13.wav"
+}
+
+"NPC_hgrunt.clear14"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_clear14.wav"
+}
+
+"NPC_hgrunt.clear15"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_clear15.wav"
+}
+
+"NPC_hgrunt.charge01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge01.wav"
+}
+
+"NPC_hgrunt.charge01_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge01_var01.wav"
+}
+
+"NPC_hgrunt.charge02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge02.wav"
+}
+
+"NPC_hgrunt.charge02_subd01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge02_subd01.wav"
+}
+
+"NPC_hgrunt.charge02_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge02_var01.wav"
+}
+
+"NPC_hgrunt.charge02_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge02_var02.wav"
+}
+
+"NPC_hgrunt.charge02_var03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge02_var03.wav"
+}
+
+"NPC_hgrunt.charge03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge03.wav"
+}
+
+"NPC_hgrunt.charge03_subd01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge03_subd01.wav"
+}
+
+"NPC_hgrunt.charge03_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge03_var01.wav"
+}
+
+"NPC_hgrunt.charge03_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge03_var02.wav"
+}
+
+"NPC_hgrunt.charge03_var03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge03_var03.wav"
+}
+
+"NPC_hgrunt.charge04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge04.wav"
+}
+
+"NPC_hgrunt.charge04_subd01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge04_subd01.wav"
+}
+
+"NPC_hgrunt.charge04_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge04_var01.wav"
+}
+
+"NPC_hgrunt.charge04_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge04_var02.wav"
+}
+
+"NPC_hgrunt.charge05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge05.wav"
+}
+
+"NPC_hgrunt.charge05_extrm01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge05_extrm01.wav"
+}
+
+"NPC_hgrunt.charge05_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge05_var01.wav"
+}
+
+"NPC_hgrunt.charge06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge06.wav"
+}
+
+"NPC_hgrunt.charge06_extrm01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge06_extrm01.wav"
+}
+
+"NPC_hgrunt.charge06_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge06_var01.wav"
+}
+
+"NPC_hgrunt.charge07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge07.wav"
+}
+
+"NPC_hgrunt.charge07_extrm01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge07_extrm01.wav"
+}
+
+"NPC_hgrunt.charge07_extrm02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge07_extrm02.wav"
+}
+
+"NPC_hgrunt.charge07_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge07_var01.wav"
+}
+
+"NPC_hgrunt.charge07_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge07_var02.wav"
+}
+
+"NPC_hgrunt.charge08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge08.wav"
+}
+
+"NPC_hgrunt.charge08_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge08_var01.wav"
+}
+
+"NPC_hgrunt.charge08_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge08_var02.wav"
+}
+
+"NPC_hgrunt.charge08_var03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge08_var03.wav"
+}
+
+"NPC_hgrunt.charge09"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge09.wav"
+}
+
+"NPC_hgrunt.charge09_subd01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge09_subd01.wav"
+}
+
+"NPC_hgrunt.charge09_subd02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge09_subd02.wav"
+}
+
+"NPC_hgrunt.charge09_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge09_var01.wav"
+}
+
+"NPC_hgrunt.charge09_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge09_var02.wav"
+}
+
+"NPC_hgrunt.charge09_var03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge09_var03.wav"
+}
+
+"NPC_hgrunt.charge10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge10.wav"
+}
+
+"NPC_hgrunt.charge10_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge10_var01.wav"
+}
+
+"NPC_hgrunt.charge10_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge10_var02.wav"
+}
+
+"NPC_hgrunt.charge10_var03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge10_var03.wav"
+}
+
+"NPC_hgrunt.charge11"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge11.wav"
+}
+
+"NPC_hgrunt.charge11_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge11_var01.wav"
+}
+
+"NPC_hgrunt.charge11_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge11_var02.wav"
+}
+
+"NPC_hgrunt.charge12"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge12.wav"
+}
+
+"NPC_hgrunt.charge12_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge12_var01.wav"
+}
+
+"NPC_hgrunt.charge12_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge12_var02.wav"
+}
+
+"NPC_hgrunt.charge13"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge13.wav"
+}
+
+"NPC_hgrunt.charge13_subd01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge13_subd01.wav"
+}
+
+"NPC_hgrunt.charge13_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge13_var01.wav"
+}
+
+"NPC_hgrunt.charge13_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge13_var02.wav"
+}
+
+"NPC_hgrunt.charge14"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge14.wav"
+}
+
+"NPC_hgrunt.charge14_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge14_var01.wav"
+}
+
+"NPC_hgrunt.charge14_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge14_var02.wav"
+}
+
+"NPC_hgrunt.charge15"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge15.wav"
+}
+
+"NPC_hgrunt.charge15_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge15_var01.wav"
+}
+
+"NPC_hgrunt.charge15_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge15_var02.wav"
+}
+
+"NPC_hgrunt.charge16"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge16.wav"
+}
+
+"NPC_hgrunt.charge16_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge16_var01.wav"
+}
+
+"NPC_hgrunt.charge17"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge17.wav"
+}
+
+"NPC_hgrunt.charge17_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge17_var01.wav"
+}
+
+"NPC_hgrunt.charge18"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge18.wav"
+}
+
+"NPC_hgrunt.charge18_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_charge18_var01.wav"
+}
+
+"NPC_hgrunt.cover01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_cover01.wav"
+}
+
+"NPC_hgrunt.cover02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_cover02.wav"
+}
+
+"NPC_hgrunt.cover02_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_cover02_var01.wav"
+}
+
+"NPC_hgrunt.cover03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_cover03.wav"
+}
+
+"NPC_hgrunt.cover04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_cover04.wav"
+}
+
+"NPC_hgrunt.cover04_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_cover04_var01.wav"
+}
+
+"NPC_hgrunt.cover05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_cover05.wav"
+}
+
+"NPC_hgrunt.cover05_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_cover05_var01.wav"
+}
+
+"NPC_hgrunt.cover05_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_cover05_var02.wav"
+}
+
+"NPC_hgrunt.cover06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_cover06.wav"
+}
+
+"NPC_hgrunt.cover07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_cover07.wav"
+}
+
+"NPC_hgrunt.cover07_subd01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_cover07_subd01.wav"
+}
+
+"NPC_hgrunt.cover07_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_cover07_var01.wav"
+}
+
+"NPC_hgrunt.cover08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_cover08.wav"
+}
+
+"NPC_hgrunt.cover09"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_cover09.wav"
+}
+
+"NPC_hgrunt.cover10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_cover10.wav"
+}
+
+"NPC_hgrunt.cover11"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_cover11.wav"
+}
+
+"NPC_hgrunt.cover12"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_cover12.wav"
+}
+
+"NPC_hgrunt.cover13"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_cover13.wav"
+}
+
+"NPC_hgrunt.cover14"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_cover14.wav"
+}
+
+"NPC_hgrunt.cover14_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_cover14_var02.wav"
+}
+
+"NPC_hgrunt.cover15"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_cover15.wav"
+}
+
+"NPC_hgrunt.cover16"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_cover16.wav"
+}
+
+"NPC_hgrunt.cover16_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_cover16_var01.wav"
+}
+
+"NPC_hgrunt.cover17"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_cover17.wav"
+}
+
+"NPC_hgrunt.cover17_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_cover17_var01.wav"
+}
+
+"NPC_hgrunt.gren01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_gren01.wav"
+}
+
+"NPC_hgrunt.gren02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_gren02.wav"
+}
+
+"NPC_hgrunt.gren03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_gren03.wav"
+}
+
+"NPC_hgrunt.gren04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_gren04.wav"
+}
+
+"NPC_hgrunt.gren05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_gren05.wav"
+}
+
+"NPC_hgrunt.gren05_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_gren05_var01.wav"
+}
+
+"NPC_hgrunt.gren06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_gren06.wav"
+}
+
+"NPC_hgrunt.gren07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_gren07.wav"
+}
+
+"NPC_hgrunt.gren07_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_gren07_var01.wav"
+}
+
+"NPC_hgrunt.gren07_var03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_gren07_var03.wav"
+}
+
+"NPC_hgrunt.gren07_var04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_gren07_var04.wav"
+}
+
+"NPC_hgrunt.gren08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_gren08.wav"
+}
+
+"NPC_hgrunt.gren09"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_gren09.wav"
+}
+
+"NPC_hgrunt.gren10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_gren10.wav"
+}
+
+"NPC_hgrunt.gren10_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_gren10_var01.wav"
+}
+
+"NPC_hgrunt.gren10_var03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_gren10_var03.wav"
+}
+
+"NPC_hgrunt.gren11"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_gren11.wav"
+}
+
+"NPC_hgrunt.gren12"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_gren12.wav"
+}
+
+"NPC_hgrunt.gren13"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_gren13.wav"
+}
+
+"NPC_hgrunt.gren13_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_gren13_var02.wav"
+}
+
+"NPC_hgrunt.hit01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_hit01.wav"
+}
+
+"NPC_hgrunt.hit02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_hit02.wav"
+}
+
+"NPC_hgrunt.hit02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_hit02.wav"
+}
+
+"NPC_hgrunt.hit03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_hit03.wav"
+}
+
+"NPC_hgrunt.hit04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_hit04.wav"
+}
+
+"NPC_hgrunt.hit05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_hit05.wav"
+}
+
+"NPC_hgrunt.hit06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_hit06.wav"
+}
+
+"NPC_hgrunt.hit07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_hit07.wav"
+}
+
+"NPC_hgrunt.hit08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_hit08.wav"
+}
+
+"NPC_hgrunt.hit09"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_hit09.wav"
+}
+
+"NPC_hgrunt.hit10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_hit10.wav"
+}
+
+"NPC_hgrunt.hit11"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_hit11.wav"
+}
+
+"NPC_hgrunt.hit12"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_hit12.wav"
+}
+
+"NPC_hgrunt.hit12_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_hit12_var01.wav"
+}
+
+"NPC_hgrunt.hit12_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_hit12_var02.wav"
+}
+
+"NPC_hgrunt.hit13"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_hit13.wav"
+}
+
+"NPC_hgrunt.hit14"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_hit14.wav"
+}
+
+"NPC_hgrunt.hit15"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_hit15.wav"
+}
+
+"NPC_hgrunt.hit15_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_hit15_var01.wav"
+}
+
+"NPC_hgrunt.hit16"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_hit16.wav"
+}
+
+"NPC_hgrunt.hit17"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_hit17.wav"
+}
+
+"NPC_hgrunt.hit18"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_hit18.wav"
+}
+
+"NPC_hgrunt.hit18_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_hit18_var01.wav"
+}
+
+"NPC_hgrunt.hit19"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_hit19.wav"
+}
+
+"NPC_hgrunt.idle01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_idle01.wav"
+}
+
+"NPC_hgrunt.idle02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_idle02.wav"
+}
+
+"NPC_hgrunt.idle03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_idle03.wav"
+}
+
+"NPC_hgrunt.idle04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_idle04.wav"
+}
+
+"NPC_hgrunt.idle07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_idle07.wav"
+}
+
+"NPC_hgrunt.idle09"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_idle09.wav"
+}
+
+"NPC_hgrunt.idle12"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_idle12.wav"
+}
+
+"NPC_hgrunt.idle13"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_idle13.wav"
+}
+
+"NPC_hgrunt.medic01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_medic01.wav"
+}
+
+"NPC_hgrunt.medic01_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_medic01_var01.wav"
+}
+
+"NPC_hgrunt.medic02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_medic02.wav"
+}
+
+"NPC_hgrunt.medic03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_medic03.wav"
+}
+
+"NPC_hgrunt.medic04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_medic04.wav"
+}
+
+"NPC_hgrunt.medic05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_medic05.wav"
+}
+
+"NPC_hgrunt.medic06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_medic06.wav"
+}
+
+
+"NPC_hgrunt.monster01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_monst01.wav"
+}
+
+"NPC_hgrunt.monster02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_monst02.wav"
+}
+
+"NPC_hgrunt.monster03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_monst03.wav"
+}
+
+"NPC_hgrunt.monster03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_monst03.wav"
+}
+
+"NPC_hgrunt.monster04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_monst04.wav"
+}
+
+"NPC_hgrunt.monster05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_monst05.wav"
+}
+
+"NPC_hgrunt.monster05_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_monst05_var01.wav"
+}
+
+"NPC_hgrunt.monster06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_monst06.wav"
+}
+
+"NPC_hgrunt.monster06_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_monst06_var01.wav"
+}
+
+"NPC_hgrunt.monster07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_monst07.wav"
+}
+
+"NPC_hgrunt.monster08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_monst08.wav"
+}
+
+"NPC_hgrunt.monster09"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_monst09.wav"
+}
+
+"NPC_hgrunt.monster10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_monst10.wav"
+}
+
+"NPC_hgrunt.monster11"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_monst11.wav"
+}
+
+"NPC_hgrunt.monster12"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_monst12.wav"
+}
+
+"NPC_hgrunt.monster12_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_monst12_var01.wav"
+}
+
+"NPC_hgrunt.monster13"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_monst13.wav"
+}
+
+"NPC_hgrunt.monster13_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_monst13_var01.wav"
+}
+
+"NPC_hgrunt.monster14"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_monst14.wav"
+}
+
+"NPC_hgrunt.monster14_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_monst14_var01.wav"
+}
+
+"NPC_hgrunt.monster14_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_monst14_var02.wav"
+}
+
+"NPC_hgrunt.monster15"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_monst15.wav"
+}
+
+"NPC_hgrunt.monster16"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_monst16.wav"
+}
+
+"NPC_hgrunt.monster16_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_monst16_var01.wav"
+}
+
+"NPC_hgrunt.monster17"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_monst17.wav"
+}
+
+"NPC_hgrunt.monster18"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_monst18.wav"
+}
+
+"NPC_hgrunt.monster19"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_monst19.wav"
+}
+
+"NPC_hgrunt.monster20"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_monst20.wav"
+}
+
+"NPC_hgrunt.onfire01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_onfire01.wav"
+}
+
+"NPC_hgrunt.onfire02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_onfire02.wav"
+}
+
+"NPC_hgrunt.onfire03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_onfire03.wav"
+}
+
+"NPC_hgrunt.onfire04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_onfire04.wav"
+}
+
+"NPC_hgrunt.onfire05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_onfire05.wav"
+}
+
+"NPC_hgrunt.onfire06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_onfire06.wav"
+}
+
+"NPC_hgrunt.pain01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_pain01.wav"
+}
+
+"NPC_hgrunt.pain02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_pain02.wav"
+}
+
+"NPC_hgrunt.pain03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_pain03.wav"
+}
+
+"NPC_hgrunt.pain04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_pain04.wav"
+}
+
+"NPC_hgrunt.pain05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_pain05.wav"
+}
+
+"NPC_hgrunt.pain06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_pain06.wav"
+}
+
+"NPC_hgrunt.pain07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_pain07.wav"
+}
+
+"NPC_hgrunt.pain08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_pain08.wav"
+}
+
+"NPC_hgrunt.pain09"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_pain09.wav"
+}
+
+"NPC_hgrunt.pain10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_pain10.wav"
+}
+
+"NPC_hgrunt.pain11"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_pain11.wav"
+}
+
+"NPC_hgrunt.pain12"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_pain12.wav"
+}
+
+"NPC_hgrunt.taunt01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_taunt01.wav"
+}
+
+"NPC_hgrunt.taunt03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_taunt03.wav"
+}
+
+"NPC_hgrunt.taunt03_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_taunt03_var01.wav"
+}
+
+"NPC_hgrunt.taunt04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_taunt04.wav"
+}
+
+"NPC_hgrunt.taunt04_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_taunt04_var01.wav"
+}
+
+"NPC_hgrunt.taunt04_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_taunt04_var02.wav"
+}
+
+"NPC_hgrunt.taunt04_var03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_taunt04_var03.wav"
+}
+
+"NPC_hgrunt.taunt05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_taunt05.wav"
+}
+
+"NPC_hgrunt.taunt05_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_taunt05_var01.wav"
+}
+
+"NPC_hgrunt.taunt06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_taunt06.wav"
+}
+
+"NPC_hgrunt.taunt06_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_taunt06_var01.wav"
+}
+
+"NPC_hgrunt.taunt06_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_taunt06_var02.wav"
+}
+
+"NPC_hgrunt.taunt06_var03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_taunt06_var03.wav"
+}
+
+"NPC_hgrunt.taunt07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_taunt07.wav"
+}
+
+"NPC_hgrunt.taunt07_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_taunt07_var01.wav"
+}
+
+"NPC_hgrunt.taunt09"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_taunt09.wav"
+}
+
+"NPC_hgrunt.taunt09_hurt01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_taunt09_hurt01.wav"
+}
+
+"NPC_hgrunt.taunt09_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_taunt09_var01.wav"
+}
+
+"NPC_hgrunt.taunt09_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_taunt09_var02.wav"
+}
+
+"NPC_hgrunt.taunt09_var03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_taunt09_var03.wav"
+}
+
+"NPC_hgrunt.taunt10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_taunt10.wav"
+}
+
+"NPC_hgrunt.taunt10_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_taunt10_var01.wav"
+}
+
+"NPC_hgrunt.taunt10_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_taunt10_var02.wav"
+}
+
+"NPC_hgrunt.taunt_special01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_taunt_special01.wav"
+}
+
+"NPC_hgrunt.taunt_special01_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_taunt_special01_var01.wav"
+}
+
+"NPC_hgrunt.taunt_special03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_taunt_special03.wav"
+}
+
+"NPC_hgrunt.question01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_question01.wav"
+}
+
+"NPC_hgrunt.question02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_question02.wav"
+}
+
+"NPC_hgrunt.question02_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_question02_var01.wav"
+}
+
+"NPC_hgrunt.question02_extrm01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_question02_extrm01.wav"
+}
+
+"NPC_hgrunt.question03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_question03.wav"
+}
+
+"NPC_hgrunt.question04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_question04.wav"
+}
+
+"NPC_hgrunt.question05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_question05.wav"
+}
+
+"NPC_hgrunt.question06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_question06.wav"
+}
+
+"NPC_hgrunt.question07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_question07.wav"
+}
+
+"NPC_hgrunt.question08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_question08.wav"
+}
+
+"NPC_hgrunt.question09"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_question09.wav"
+}
+
+"NPC_hgrunt.question10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_question10.wav"
+}
+
+"NPC_hgrunt.question11"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_question11.wav"
+}
+
+"NPC_hgrunt.question12"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_question12.wav"
+}
+
+"NPC_hgrunt.question12_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_question12_var01.wav"
+}
+
+"NPC_hgrunt.question13"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_question13.wav"
+}
+
+"NPC_hgrunt.question14"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_question14.wav"
+}
+
+"NPC_hgrunt.question15"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_question15.wav"
+}
+
+"NPC_hgrunt.taunt_special04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_taunt_special04.wav"
+}
+
+"NPC_hgrunt.throw01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_throw01.wav"
+}
+
+"NPC_hgrunt.throw02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_throw02.wav"
+}
+
+"NPC_hgrunt.throw02_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_throw02_var01.wav"
+}
+
+"NPC_hgrunt.throw03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_throw03.wav"
+}
+
+"NPC_hgrunt.throw04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_throw04.wav"
+}
+
+"NPC_hgrunt.throw05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_throw05.wav"
+}
+
+"NPC_hgrunt.throw05_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_throw05_var01.wav"
+}
+
+"NPC_hgrunt.throw06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_throw06.wav"
+}
+
+"NPC_hgrunt.enemydead01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_enemydead01.wav"
+}
+
+"NPC_hgrunt.enemydead01_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_enemydead01_var01.wav"
+}
+
+"NPC_hgrunt.enemydead02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_enemydead02.wav"
+}
+
+"NPC_hgrunt.enemydead02_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_enemydead02_var01.wav"
+}
+
+"NPC_hgrunt.enemydead03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_enemydead03.wav"
+}
+
+"NPC_hgrunt.enemydead03_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_enemydead03_var01.wav"
+}
+
+"NPC_hgrunt.enemydead04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/npc/hecu_grunt/$gender/hg_enemydead04.wav"
+}

@@ -1,0 +1,91 @@
+criterion IsFAF1 "map" "bm_c3a1a" required
+
+//========================================================
+//Jerk GRD Agrunt Dead End
+//========================================================
+criterion IsGRD1Ass name "GRD01_LambdaBunker" required weight 9
+
+// response GRD1_Ass_DeadEnd
+// {
+	// norepeat
+	// scene ".vcd"
+// }
+
+// rule GRD1_Ass_DeadEnd
+// {
+   // criteria TLK_IDLE IsGRD1Ass IsPlayerClose IsFAF1 SeenByPlayer
+   // response GRD1_Ass_DeadEnd
+// }
+
+//========================================================
+//Jerk GRD Sewer Exit
+//========================================================
+
+// response GRD1_Ass_Sewer
+// {
+	// norepeat
+	// scene ".vcd"
+// }
+
+// rule GRD1_Ass_DeadEnd
+// {
+   // criteria TLK_IDLE IsGRD1Ass IsPlayerClose IsFAF1 SeenByPlayer
+   // response GRD1_Ass_Sewer
+// }
+
+
+//========================================================
+//Jerk GRD Snark Mine
+//========================================================
+
+// response GRD1_Ass_SnarkMine
+// {
+	// norepeat
+	// scene ".vcd"
+// }
+
+// rule GRD1_Ass_SnarkMine
+// {
+   // criteria TLK_IDLE IsGRD1Ass IsPlayerClose IsFAF1 SeenByPlayer
+   // response GRD1_Ass_SnarkMine
+// }
+
+//========================================================
+//Jerk GRD Idle
+//========================================================
+
+response GRD1_Ass_Idle
+{
+	scene "scenes/npc/security_bs/getgoingsoon01.vcd"
+	
+	scene "scenes/npc/security_bs/getgoingsoon06.vcd"
+
+	scene "scenes/npc/security_bs/getgoingsoon10.vcd"
+	scene "scenes/npc/security_bs/getgoingsoon11.vcd"
+	scene "scenes/npc/security_bs/getgoingsoon12.vcd"
+	
+}
+
+rule GRD1_Ass_Idle
+{
+   criteria TLK_IDLE IsGRD1Ass IsFAF1 NoRecentCombat IsFollowingPlayer 
+   response GRD1_Ass_Idle
+}
+
+response GRD1_Ass_Idle_Stopped
+{
+	scene "scenes/npc/security_bs/getgoingsoon02.vcd"
+	scene "scenes/npc/security_bs/getgoingsoon03.vcd"
+	scene "scenes/npc/security_bs/getgoingsoon04.vcd"
+	scene "scenes/npc/security_bs/getgoingsoon07.vcd"
+	scene "scenes/npc/security_bs/getgoingsoon08.vcd"
+	scene "scenes/npc/security_bs/getgoingsoon09.vcd"
+	scene "scenes/npc/security_bs/getgoingsoon13.vcd"
+	scene "scenes/npc/security_bs/getgoingsoon14.vcd"
+}
+
+rule GRD1_Ass_Idle_Stopped
+{
+   criteria TLK_IDLE IsGRD1Ass IsFAF1 NoRecentCombat IsFollowingPlayer IsStopped 
+   response GRD1_Ass_Idle_Stopped
+}
